@@ -1,0 +1,112 @@
+<!DOCTYPE {{{ page.doctype || 'html' }}}>
+<html lang="{{ page.language || 'en' }}" xmlns:v="urn:schemas-microsoft-com:vml">
+
+<head>
+  <meta charset="{{ page.charset || 'utf-8' }}">
+  <meta name="x-apple-disable-message-reformatting">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
+  <meta name="color-scheme" content="light dark">
+  <meta name="supported-color-schemes" content="light dark">
+  <!--[if mso]>
+  <noscript>
+    <xml>
+      <o:OfficeDocumentSettings xmlns:o="urn:schemas-microsoft-com:office:office">
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+  </noscript>
+  <style>
+    td,th,div,p,a,h1,h2,h3,h4,h5,h6 {font-family: "Segoe UI", sans-serif; mso-line-height-rule: exactly;}
+    .mso-break-all {word-break: break-all;}
+  </style>
+  <![endif]-->
+  <if condition="page.title">
+    <title>{{{ page.title }}}</title>
+  </if>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" media="screen">
+  <style>
+    @tailwind components;
+    @tailwind utilities;
+
+
+    :root {
+      --background: #131313;
+      --card: #191919;
+      --border: #2C2C2C;
+      --text: #fff;
+      --purple-text: #663C9D;
+      --social-links: #242424;
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --background: #E3E3E3;
+        --card: #F4F4F4;
+        --border: #D7D7D7;
+        --text: #383838;
+        --purple-text: #663C9D;
+        --social-links: #fff;
+      }
+    }
+
+    p {
+      margin: 0 !important;
+    }
+
+    [data-subtitle] {
+      font-size: clamp(10px, 8vw, 18px) !important;
+    }
+
+    [data-title] {
+      font-size: clamp(10px, 8vw, 16px) !important;
+    }
+
+    [data-condominium],
+    [data-content],
+    [data-name] {
+      font-size: clamp(10px, 8vw, 12px) !important;
+      line-height: 22px;
+    }
+
+    @media (max-width: 415px) {
+      span[role="button"].resize-text {
+        font-size: 13px !important;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .sm-w-6 {
+        width: 24px !important;
+      }
+
+      .sm-px-2 {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+      }
+
+      .sm-text-xs {
+        font-size: 12px !important;
+      }
+    }
+  </style>
+  <stack name="head" />
+</head>
+
+<body
+  class="m-0 p-0 w-full [word-break:break-word] font-sans antialiased [-webkit-font-smoothing:antialiased] {{ page.bodyClass || '' }}">
+  <if condition="page.preheader">
+    <div class="hidden">
+      {{{ page.preheader }}}
+      <each loop="item in Array.from(Array(150))">&#8199;&#65279;&#847; </each>
+    </div>
+  </if>
+  <div role="article" aria-roledescription="email" aria-label="{{{ page.title || '' }}}"
+    lang="{{ page.language || 'en' }}">
+    <yield />
+  </div>
+</body>
+
+</html>
