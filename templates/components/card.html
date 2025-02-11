@@ -1,0 +1,21 @@
+<script props>
+    const align = ['center', 'right', 'left'].find(align => props.align === align)
+
+    const styles = [
+        ...(props.mw && `max-width: ${props.mw}px`),
+    ]
+    module.exports = {
+        align,
+        styles: styles.join(''),
+    }
+
+</script>
+
+<table class="w-full" style="{{ styles }}">
+    <tr>
+        <td align="{{ align }}"
+            class="rounded-[25px] bg-[var(--card)] [border:solid_1px_var(--border)] text-[var(--text)] p-6">
+            <yield />
+        </td>
+    </tr>
+</table>

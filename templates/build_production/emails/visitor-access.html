@@ -22,7 +22,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" media="screen">
-  <style>
+  <style type="text/css">
     .bg-var--background {
       background-color: #131313 !important;
     }
@@ -47,11 +47,11 @@
         background-color: #fff !important;
       }
     }
-    .text-var--purple-text {
+    .text-var--primary {
       color: #663C9D !important;
     }
     @media (prefers-color-scheme: light) {
-      .text-var--purple-text {
+      .text-var--primary {
         color: #663C9D !important;
       }
     }
@@ -80,10 +80,14 @@
       .sm-w-6 {
         width: 24px !important;
       }
-    }
-    @media (max-width: 600px) {
       .sm-w-6 {
         width: 24px !important;
+      }
+      .sm-w-60pc {
+        width: 60% !important;
+      }
+      .sm-pb-px {
+        padding-bottom: 1px !important;
       }
     }
   </style>
@@ -96,113 +100,107 @@
   <div role="article" aria-roledescription="email" aria-label lang="en">
     <div class="bg-var--background" style="background-color: #131313; padding: 16px; letter-spacing: -.3px">
       <table align="center" style="margin: 0 auto" cellpadding="0" cellspacing="0" role="none">
-        <tr align="center">
-          <td style="border-radius: 16px; background-color: #4F2B78; padding: 2px">
-            <div style="border-radius: 12px; padding-top: 32px; background: url('https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2Femail-header%20(4).png?alt=media&token=346891aa-2e9a-40f1-828c-2b700c28b49e')center top/cover no-repeat">
-              <table cellpadding="0" cellspacing="0" role="none">
-                <tr>
-                  <td valign="bottom" align="center">
-                    <div style="margin-bottom: 12px">
-                      <img src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2Ffull-logo%20(1).png?alt=media&token=71740192-ef22-47a4-9b69-80abf21de38b" alt="Livo Logo" style="width: 60px" width="60">
-                    </div>
-                    <p data-title class="resize-text" style="margin: 0; position: relative; width: fit-content; text-wrap: nowrap; border-radius: 15px 15px 0 0; background-color: #4F2B78; padding: 4px 24px; font-weight: 600; color: #fffffe; font-size: clamp(10px, 8vw, 16px)">
-                      Acesso de visitante
-                    </p>
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </td>
-        </tr>
-        <tr style="height: 12px"></tr>
         <tr>
           <td style="width: 552px; max-width: 100%">
             <table style="width: 100%" cellpadding="0" cellspacing="0" role="none">
-              <tr align="center" style="position: relative">
-                <td style="position: relative; overflow: hidden; border-radius: 20px"></td>
-              </tr>
               <tr>
                 <td align="center">
-                  <div class="bg-var--card border-solid_1px_var--border text-var--text" style="border-radius: 25px; background-color: #191919; padding: 24px; color: #fff; border: 1px solid #2c2c2c">
-                    <span data-subtitle style="font-weight: 600; letter-spacing: -1px; font-size: clamp(10px, 8vw, 18px)">
-                    <div style="margin-bottom: 16px">
-                      <img src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2Ffull-logo%20(1).png?alt=media&token=71740192-ef22-47a4-9b69-80abf21de38b" alt="Livo Logo" style="width: 60px" width="60">
-                    </div>
-                    <p style="margin: 0; text-align: center">Informamos que seu visitante</p>
+                  <table cellpadding="0" cellspacing="0" role="none">
+                    <tr>
+                      <td valign="bottom" align="center">
+                        <table cellpadding="0" cellspacing="0" role="none">
+                          <tr>
+                            <td style="height: 80px; width: 80px; border-radius: 26px; background-color: #e5e5e5">
+                              <img src="https://img-64e62d326ae56091b6bce833a76dafa6b1758ff9.s3.amazonaws.com/logos/atgb.png" alt="Livo Logo" style="width: 100%; object-fit: cover">
+                            </td>
+                          </tr>
+                        </table>
+                        <div role="separator">&zwj;</div>
+                        <p data-title class="resize-text" style="margin: 0; position: relative; width: fit-content; text-wrap: nowrap; border-radius: 15px 15px 0 0; background-color: #4F2B78; padding: 4px 24px; font-weight: 600; color: #fffffe; font-size: clamp(10px, 8vw, 16px)">
+                          Acesso de visitante
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                  <table style="width: 100%" cellpadding="0" cellspacing="0" role="none">
+                    <tr>
+                      <td align="{{ align }}" class="bg-var--card border-solid_1px_var--border text-var--text" style="border-radius: 25px; background-color: #191919; padding: 24px; color: #fff; border: 1px solid #2c2c2c"> <span data-subtitle style="font-weight: 600; letter-spacing: -1px; font-size: clamp(10px, 8vw, 18px)"> <p style="margin: 0; text-align: center">Informamos que seu visitante</p>
                     <p style="margin: 0; text-align: center">
                       <span style="text-align: center; color: #663c9d">Pablo Novaes
                       </span>
-                    entrou
-                    </p>
-                    </span>
-                    <div style="height: 20px"></div>
-                    <div style="margin-left: auto; margin-right: auto; max-height: 280px; max-width: 280px; overflow: hidden; border-radius: 24px; padding: 4px; border: 3px solid #4f2b78">
-                      <img src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FIMG_20220723_191648_093.jpg?alt=media&token=9cd547ad-fe3d-4a59-97b6-b0ee31349847" alt style="width: 100%; border-radius: 16px">
-                    </div>
-                    <div style="height: 20px"></div>
-                    <table align="center" style="width: 100%" cellpadding="0" cellspacing="0" role="none">
-                      <tr align="center">
-                        <td>
-                          <table cellpadding="0" cellspacing="0" role="none">
-                            <tr>
-                              <td>
-                                <p data-name style="line-height: 22px; margin: 0 0 0 4px; text-align: center; font-size: clamp(10px, 8vw, 12px)"> Pablo Novaes Goncalves de Macedo
-                                </p>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-                    </table>
-                    <table align="center" style="width: 100%" cellpadding="0" cellspacing="0" role="none">
-                      <tr align="center">
-                        <td>
-                          <table cellpadding="0" cellspacing="0" role="none">
-                            <tr>
-                              <td>
-                                <div>
-                                  <p data-condominium style="line-height: 22px; margin: 0 0 0 4px; text-align: center; font-size: clamp(10px, 8vw, 12px)"> Livo App
-                                  </p>
-                                </div>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
+                        entrou
+                        </p>
+                        </span>
+                        <div style="height: 20px"></div>
+                        <div class="sm-w-60pc sm-pb-px" style="margin-left: auto; margin-right: auto; max-height: 280px; max-width: 280px; overflow: hidden; border-radius: 24px; padding: 4px; border: 3px solid #4f2b78">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FIMG_20220723_191648_093.jpg?alt=media&token=9cd547ad-fe3d-4a59-97b6-b0ee31349847" alt style="width: 100%; border-radius: 16px">
+                        </div>
+                        <div style="height: 20px"></div>
+                        <table align="center" style="width: 100%" cellpadding="0" cellspacing="0" role="none">
+                          <tr align="center">
+                            <td>
+                              <table cellpadding="0" cellspacing="0" role="none">
+                                <tr>
+                                  <td>
+                                    <p data-name style="line-height: 22px; margin: 0 0 0 4px; text-align: center; font-size: clamp(10px, 8vw, 12px)"> Pablo Novaes Goncalves de Macedo
+                                    </p>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <table align="center" style="width: 100%" cellpadding="0" cellspacing="0" role="none">
+                          <tr align="center">
+                            <td>
+                              <table cellpadding="0" cellspacing="0" role="none">
+                                <tr>
+                                  <td>
+                                    <div>
+                                      <p data-condominium style="line-height: 22px; margin: 0 0 0 4px; text-align: center; font-size: clamp(10px, 8vw, 12px)"> Livo App
+                                      </p>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
                 </td>
               </tr>
               <tr style="height: 16px"></tr>
               <tr>
                 <td>
-                  <div class="bg-var--card border-solid_1px_var--border text-var--text" style="border-radius: 25px; background-color: #191919; padding: 24px; color: #fff; border: 1px solid #2c2c2c">
-                    <table style="width: 100%" cellpadding="0" cellspacing="0" role="none">
-                      <tr align="center" data-content class="resize-text" style="line-height: 22px; text-align: center; font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; font-weight: 300; font-size: clamp(10px, 8vw, 12px)">
-                        <td>
-                          Essa notificação foi enviada ao endereço de e-mail
-                          <br>
-                          associado a sua conta LIVO.
-                        </td>
-                      </tr>
-                      <tr style="height: 4px"></tr>
-                      <tr align="center" data-content class="resize-text" style="line-height: 22px; text-align: center; font-weight: 300; font-size: clamp(10px, 8vw, 12px)">
-                        <td>
-                          Não responda a este e-mail, caso necessite de ajuda,
-                          <br>
-                          entre em contato com nosso suporte
-                        </td>
-                      </tr>
-                      <tr style="height: 24px"></tr>
-                      <tr align="center" data-content class="resize-text" style="line-height: 22px; text-align: center; font-weight: 300; font-size: clamp(10px, 8vw, 12px)">
-                        <td>
-                          <a target="_blank" class="resize-text text-var--purple-text" href="https://api.whatsapp.com/send?phone=5511991534123&text=Ol%C3%A1%2C%20gostaria%20de%20ajuda%20com%20a%20plataforma%20Livo." style="color: #663C9D">
-                            Suporte via WhatsApp
-                          </a>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
+                  <table style="width: 100%" cellpadding="0" cellspacing="0" role="none">
+                    <tr>
+                      <td align="{{ align }}" class="bg-var--card border-solid_1px_var--border text-var--text" style="border-radius: 25px; background-color: #191919; padding: 24px; color: #fff; border: 1px solid #2c2c2c">
+                        <table style="width: 100%" cellpadding="0" cellspacing="0" role="none">
+                          <tr align="center" data-content class="resize-text" style="line-height: 22px; text-align: center; font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; font-weight: 300; font-size: clamp(10px, 8vw, 12px)">
+                            <td>
+                              Essa notificação foi enviada ao endereço de e-mail associado a sua conta LIVO.
+                            </td>
+                          </tr>
+                          <tr style="height: 4px"></tr>
+                          <tr align="center" data-content class="resize-text" style="line-height: 22px; text-align: center; font-weight: 300; font-size: clamp(10px, 8vw, 12px)">
+                            <td>
+                              Não responda a este e-mail, caso necessite de ajuda, entre em contato com nosso suporte
+                            </td>
+                          </tr>
+                          <tr style="height: 8px"></tr>
+                          <tr align="center" data-content class="resize-text" style="line-height: 22px; text-align: center; font-weight: 300; font-size: clamp(10px, 8vw, 12px)">
+                            <td>
+                              <a target="_blank" class="resize-text text-var--primary" href="https://api.whatsapp.com/send?phone=5511991534123&text=Ol%C3%A1%2C%20gostaria%20de%20ajuda%20com%20a%20plataforma%20Livo." style="color: #663C9D">
+                                Suporte via WhatsApp
+                              </a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
                 </td>
               </tr>
               <tr style="height: 16px"></tr>
@@ -218,7 +216,7 @@
                       <tr align="center" style="font-weight: 600">
                         <td>Livo App</td>
                       </tr>
-                      <tr align="center" style="font-size: 13px; font-weight: 600">
+                      <tr align="center" style="font-size: 13px; font-weight: 400; color: currentColor">
                         <td>Sua portaria conectada</td>
                       </tr>
                     </table>

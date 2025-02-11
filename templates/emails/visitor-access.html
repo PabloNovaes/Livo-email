@@ -9,40 +9,50 @@ preheader: Transactional email template
         <td class="p-0.5 rounded-2xl bg-[#4F2B78]">
           <div
             class="rounded-xl pt-8 [background:url('https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2Femail-header%20(4).png?alt=media&token=346891aa-2e9a-40f1-828c-2b700c28b49e')center_top/cover_no-repeat]">
-            <table>
-              <tr>
-                <td valign="bottom" align="center">
-                  <div class="mb-3">
-                    <img
-                      src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2Ffull-logo%20(1).png?alt=media&token=71740192-ef22-47a4-9b69-80abf21de38b"
-                      class="w-[60px]" alt="Livo Logo" />
-                  </div>
-                  <p data-title
-                    class="text-white resize-text font-semibold text-nowrap bg-[#4F2B78] w-fit px-6 py-1 relative rounded-[15px_15px_0_0]">
-                    Acesso de visitante
-                  </p>
-                </td>
-              </tr>
-            </table>
+
           </div>
         </td>
-      </tr>
-      <tr class="h-3"></tr> -->
+      </tr> -->
+      <!-- <tr class="h-3"></tr>  -->
       <tr>
         <td class="w-[552px] max-w-full">
           <table class="w-full">
-            <tr class="relative" align="center">
-              <td class="relative overflow-hidden rounded-[20px]"></td>
-            </tr>
             <tr>
               <td align="center">
-                <div class="rounded-[25px] bg-[var(--card)] [border:solid_1px_var(--border)] text-[var(--text)] p-6">
+                <table>
+                  <tr>
+                    <td valign="bottom" align="center">
+                      <table>
+                        <tr>
+                          <td>
+                            <img
+                              src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2Ffull-logo%20(1).png?alt=media&token=71740192-ef22-47a4-9b69-80abf21de38b"
+                              class="w-[80px]" alt="Livo Logo" />
+                          </td>
+                          <!-- <td>
+                            <p class="text-3xl px-2">+</p>
+                          </td>
+                          <td class="w-20 h-20 rounded-[26px] bg-neutral-200">
+                            <img
+                              src="https://img-64e62d326ae56091b6bce833a76dafa6b1758ff9.s3.amazonaws.com/logos/atgb.png"
+                              class="w-full object-cover" alt="Livo Logo" />
+                          </td> -->
+                        </tr>
+                      </table>
+                      <x-spacer />
+                      <p data-title
+                        class="text-white resize-text font-semibold text-nowrap bg-[#4F2B78] w-fit px-6 py-1 relative rounded-[15px_15px_0_0]">
+                        Acesso de visitante
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+                <x-card>
                   <span data-subtitle class="-tracking-[1px] font-semibold">
-                    <div class="mb-4">
-                      <img
-                        src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2Ffull-logo%20(1).png?alt=media&token=71740192-ef22-47a4-9b69-80abf21de38b"
-                        class="w-[60px]" alt="Livo Logo" />
-                    </div>
+                    <!-- <div class="mb-4 bg-zinc-300 w-fit p-2 rounded-xl">
+                      <img src="https://img-64e62d326ae56091b6bce833a76dafa6b1758ff9.s3.amazonaws.com/logos/atgb.png"
+                        class="w-[100px]" alt="Livo Logo" />
+                    </div> -->
                     <p class="text-center">Informamos que seu visitante</p>
                     <p class="text-center ">
                       <span class="text-[#663c9d] text-center">Pablo Novaes
@@ -52,7 +62,7 @@ preheader: Transactional email template
                   </span>
                   <div class="h-5"></div>
                   <div
-                    class="max-w-[280px] max-h-[280px] rounded-3xl mx-auto overflow-hidden [border:solid_3px_#4F2B78] p-1">
+                    class="rounded-3xl mx-auto sm:w-[60%] max-w-[280px] max-h-[280px] overflow-hidden [border:solid_3px_#4F2B78] p-1 sm:pb-px">
                     <img
                       src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FIMG_20220723_191648_093.jpg?alt=media&token=9cd547ad-fe3d-4a59-97b6-b0ee31349847"
                       alt="" class="rounded-2xl w-full" />
@@ -99,18 +109,18 @@ preheader: Transactional email template
                     </tr>
                     <!-- <tr class="h-4"></tr> -->
                   </table>
-                </div>
+                </x-card>
               </td>
             </tr>
             <tr class="h-4"></tr>
             <tr>
               <td>
-                <div class="rounded-[25px] bg-[var(--card)] [border:solid_1px_var(--border)] text-[var(--text)] p-6">
+                <x-card>
                   <table class="w-full">
                     <tr align="center" data-content class="font-light resize-text font-sans text-center">
                       <td>
                         Essa notificação foi enviada ao endereço de e-mail
-                        <br class="max-sm:hidden" />
+                        <!-- <br class="max-sm:hidden" /> -->
                         associado a sua conta LIVO.
                       </td>
                     </tr>
@@ -118,21 +128,21 @@ preheader: Transactional email template
                     <tr align="center" data-content class="font-light resize-text text-center">
                       <td>
                         Não responda a este e-mail, caso necessite de ajuda,
-                        <br class="max-sm:hidden" />
+                        <!-- <br class="max-sm:hidden" /> -->
                         entre em contato com nosso suporte
                       </td>
                     </tr>
-                    <tr class="h-6"></tr>
+                    <tr class="h-2"></tr>
                     <tr align="center" data-content class="font-light resize-text text-center">
                       <td>
-                        <a target="_blank" class="resize-text text-[var(--purple-text)]"
+                        <a target="_blank" class="resize-text text-[var(--primary)]"
                           href="https://api.whatsapp.com/send?phone=5511991534123&text=Ol%C3%A1%2C%20gostaria%20de%20ajuda%20com%20a%20plataforma%20Livo.">
                           Suporte via WhatsApp
                         </a>
                       </td>
                     </tr>
                   </table>
-                </div>
+                </x-card>
               </td>
             </tr>
             <tr class="h-4"></tr>
@@ -150,10 +160,19 @@ preheader: Transactional email template
                     <tr align="center" class="font-semibold">
                       <td>Livo App</td>
                     </tr>
-                    <tr align="center" class="font-semibold text-[13px] text-[var(--text)]/60">
+                    <tr align="center" class="font-normal text-[13px] text-current">
                       <td>Sua portaria conectada</td>
                     </tr>
                   </table>
+                  <!-- <div class="h-3"></div>
+                  <table class="w-full">
+                    <tr align="center">
+                      <td>
+                        <img src="https://img-64e62d326ae56091b6bce833a76dafa6b1758ff9.s3.amazonaws.com/logos/atgb.png"
+                          alt="" class="max-h-[80px] mx-auto">
+                      </td>
+                    </tr>
+                  </table> -->
                   <div class="h-3"></div>
                   <table class="w-full" align="center">
                     <tr align="center" class="font-semibold">
