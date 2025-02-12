@@ -6,8 +6,6 @@
   <meta name="x-apple-disable-message-reformatting">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
-  <meta name="color-scheme" content="light dark">
-  <meta name="supported-color-schemes" content="light dark">
   <!--[if mso]>
   <noscript>
     <xml>
@@ -31,24 +29,56 @@
     @tailwind components;
     @tailwind utilities;
 
-
-    :root {
-      --background: #131313;
-      --card: #191919;
-      --border: #2C2C2C;
-      --text: #fff;
-      --primary: #663C9D;
-      --social-links: #242424;
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0 !important;
     }
 
-    @media (prefers-color-scheme: light) {
-      :root {
-        --background: #E3E3E3 !important;
-        --card: #F4F4F4 !important;
-        --border: #D7D7D7 !important;
-        --text: #383838 !important;
-        --primary: #663C9D !important;
-        --social-links: #fff !important;
+    *:not(strong, h1) {
+      font-weight: 400;
+    }
+
+    * {
+      box-sizing: border-box;
+      color: #18181b;
+    }
+
+    body {
+      background-color: #fff;
+    }
+
+    .card {
+      background-color: #F5F7FA;
+      border: solid 1px #E9ECF2;
+    }
+
+    .social-links-wrapper td a div {
+      background-color: #fff;
+      border: solid 1px #E9ECF2;
+    }
+
+    @media(prefers-color-scheme: light) {
+      * {
+        color: #E2E2E3 !important;
+      }
+
+      body {
+        background-color: #121212 !important;
+      }
+
+      .card {
+        background-color: #191919 !important;
+        border: solid 1px #313131 !important;
+      }
+
+      .social-links-wrapper td a div {
+        background-color: #191919 !important;
+        border: solid 1px #313131 !important;
       }
     }
 
@@ -68,7 +98,7 @@
     [data-content],
     [data-name] {
       font-size: clamp(10px, 8vw, 12px) !important;
-      line-height: 22px;
+      line-height: 16px;
     }
 
     @media (max-width: 415px) {
