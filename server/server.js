@@ -16,8 +16,13 @@ app.get("/", async (req, res) => {
   try {
     // Configuração do e-mail
     const mailOptions = {
-      from: '"Livo" <ppablo.0028922@gmail.com>',
-      to: ["ppablo.0028922@gmail.com", "contato@livoapp.com.br"],
+      from: '"Livo" <noreaply@livoapp.com.br>',
+      to: [
+        "ppablo.0028922@gmail.com",
+        "contato@livoapp.com.br",
+        "david@visstas.com",
+        "pablo.ng.macedo@outlook.com"
+      ],
       subject: "Comunicado",
       html: `
       <!DOCTYPE html>
@@ -43,37 +48,6 @@ app.get("/", async (req, res) => {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" media="screen">
   <style type="text/css">
-    * {
-      box-sizing: border-box;
-      color: #18181b;
-    }
-    body {
-      background-color: #fff;
-    }
-    .card {
-      background-color: #F5F7FA;
-      border: solid 1px #E9ECF2;
-    }
-    .social-links-wrapper td a div {
-      background-color: #fff;
-      border: solid 1px #E9ECF2;
-    }
-    @media(prefers-color-scheme: light) {
-      * {
-        color: #E2E2E3 !important;
-      }
-      body {
-        background-color: #121212 !important;
-      }
-      .card {
-        background-color: #191919 !important;
-        border: solid 1px #313131 !important;
-      }
-      .social-links-wrapper td a div {
-        background-color: #191919 !important;
-        border: solid 1px #313131 !important;
-      }
-    }
     @media (max-width: 415px) {
       span[role="button"].resize-text {
         font-size: 13px !important;
@@ -97,48 +71,40 @@ app.get("/", async (req, res) => {
   <div role="article" aria-roledescription="email" aria-label lang="pt" style="box-sizing: border-box; color: #18181b">
     <div style="box-sizing: border-box; color: #18181b; padding: 16px; letter-spacing: -.3px">
       <table align="center" style="box-sizing: border-box; color: #18181b; margin: 0 auto" cellpadding="0" cellspacing="0" role="none">
-        <tr style="box-sizing: border-box; color: #18181b">
+        <tr align="center" style="box-sizing: border-box; color: #18181b">
           <td style="box-sizing: border-box; color: #18181b; width: 552px; max-width: 100%">
             <div style="box-sizing: border-box; color: #18181b; padding-left: 4px">
-              <img src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FVector%20(4).png?alt=media&token=1e1b81fe-d6ac-4a5d-8e1f-0007140c19cb" alt="condominio-logo" style="box-sizing: border-box; color: #18181b; max-width: 45px; border-radius: 6px">
-              <div role="separator" style="box-sizing: border-box; color: #18181b; line-height: 10px">&zwj;</div>
-              <h1 style="box-sizing: border-box; color: #18181b; margin: 0; font-weight: 600">Acesso de visitante</h1>
-              <div role="separator" style="box-sizing: border-box; color: #18181b; line-height: 10px">&zwj;</div>
-              <p style="box-sizing: border-box; color: #18181b; margin: 0">
-                Olá <strong style="box-sizing: border-box; color: #18181b; font-weight: 600">Diego Santana</strong>, Informamos que seu visitante
-                <strong style="box-sizing: border-box; color: #18181b; font-weight: 600">Pablo Novaes</strong> acabou de entrar no condomínio.
+              <div role="separator" style="box-sizing: border-box; color: #18181b; line-height: 13px">&zwj;</div>
+              <img src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2Flivo-tela-final-cadastro_imagem.png?alt=media&token=f7f77b31-4047-4d00-8476-94dcec190d90" alt style="box-sizing: border-box; color: #18181b; margin-left: auto; margin-right: auto; max-width: 240px">
+              <h1 data-title style="box-sizing: border-box; color: #18181b; margin: 0; text-align: center; font-weight: 600; font-size: clamp(10px, 8vw, 20px)">Finalize seu cadastro</h1>
+              <div role="separator" style="box-sizing: border-box; color: #18181b; line-height: 13px">&zwj;</div>
+              <p data-content class="resize-text" style="box-sizing: border-box; color: #18181b; line-height: 16px; margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; font-weight: 300; font-size: clamp(10px, 8vw, 12px)">
+                Olá <strong style="box-sizing: border-box; color: #7D40AC">Pablo Novaes</strong> do condominio <strong style="box-sizing: border-box; color: #7D40AC">Livo App</strong>, para poder usar o
+                aplicativo e aproveitar todos os seus beneficios, complete o seu cadastro
+                clicando no botão abaixo.
               </p>
             </div>
-            <div role="separator" style="box-sizing: border-box; color: #18181b; line-height: 16px">&zwj;</div>
+            <div role="separator" style="box-sizing: border-box; color: #18181b; line-height: 22px">&zwj;</div>
             <table style="box-sizing: border-box; color: #18181b; width: 100%" cellpadding="0" cellspacing="0" role="none">
+              <tr align="center" style="box-sizing: border-box; color: #18181b">
+                <td style="box-sizing: border-box; color: #18181b"> </td>
+              </tr>
               <tr style="box-sizing: border-box; color: #18181b">
-                <td align="{{ align }}" class="card" style="box-sizing: border-box; color: #18181b; background-color: #F5F7FA; border: 1px solid #e9ecf2; border-radius: 25px">
-                  <table style="box-sizing: border-box; color: #18181b; padding: 12px" cellpadding="0" cellspacing="0" role="none">
-                    <tr style="box-sizing: border-box; color: #18181b">
-                      <td style="box-sizing: border-box; color: #18181b; width: 68px">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FIMG_20220723_191648_093.jpg?alt=media&token=9cd547ad-fe3d-4a59-97b6-b0ee31349847" alt style="box-sizing: border-box; color: #18181b; max-height: 83px; width: 100%; max-width: 83px; border-radius: 16px">
-                      </td>
-                      <td style="box-sizing: border-box; color: #18181b; padding-left: 8px">
-                        <p data-name style="box-sizing: border-box; color: #18181b; line-height: 16px; margin: 0; font-size: clamp(10px, 8vw, 12px)">
-                          Pablo Novaes Goncalves de Macedo
-                        </p>
-                        <p data-condominium style="box-sizing: border-box; color: #18181b; line-height: 16px; margin: 0; font-size: clamp(10px, 8vw, 12px)">
-                          Livo App
-                        </p>
-                      </td>
-                    </tr>
-                  </table>
+                <td style="box-sizing: border-box; color: #18181b">
+                  <button style="box-sizing: border-box; height: 48px; width: 100%; border-radius: 12px; border-style: none; background-color: #7D40AC; text-align: center; font-size: 12px; font-weight: 500; color: #fffffe">Finalize
+                    seu
+                    cadastro</button>
                 </td>
               </tr>
             </table>
           </td>
         </tr>
-        <tr style="box-sizing: border-box; color: #18181b; height: 16px"></tr>
+        <tr style="box-sizing: border-box; color: #18181b; height: 20px"></tr>
         <tr style="box-sizing: border-box; color: #18181b">
           <td style="box-sizing: border-box; color: #18181b">
             <table style="box-sizing: border-box; color: #18181b; width: 100%" cellpadding="0" cellspacing="0" role="none">
               <tr style="box-sizing: border-box; color: #18181b">
-                <td align="{{ align }}" class="card" style="box-sizing: border-box; color: #18181b; background-color: #F5F7FA; border: 1px solid #e9ecf2; border-radius: 25px">
+                <td align="{{ align }}" style="box-sizing: border-box; color: #18181b; background-color: #F5F7FA; border: 1px solid #e6e8f057; border-radius: 25px">
                   <table style="box-sizing: border-box; color: #18181b; width: 100%; padding: 24px" cellpadding="0" cellspacing="0" role="none">
                     <tr align="center" data-content class="resize-text" style="box-sizing: border-box; color: #18181b; line-height: 16px; text-align: center; font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; font-weight: 300; font-size: clamp(10px, 8vw, 12px)">
                       <td style="box-sizing: border-box; color: #18181b">
@@ -188,24 +154,24 @@ app.get("/", async (req, res) => {
                   <td colspan="3" style="box-sizing: border-box; color: #18181b">Contatos</td>
                 </tr>
                 <tr style="box-sizing: border-box; color: #18181b; height: 4px"></tr>
-                <tr align="center" class="social-links-wrapper" style="box-sizing: border-box; color: #18181b; height: 40px">
+                <tr align="center" style="box-sizing: border-box; color: #18181b; height: 40px">
                   <td align="right" style="box-sizing: border-box; color: #18181b">
                     <a href="https://api.whatsapp.com/send?phone=5511991534123&text=Ol%C3%A1%2C%20gostaria%20de%20ajuda%20com%20a%20plataforma%20Livo." style="box-sizing: border-box; color: #18181b">
-                      <div style="box-sizing: border-box; color: #18181b; background-color: #fff; border: 1px solid #e9ecf2; height: 38px; width: fit-content; border-radius: 14px; padding: 6px">
+                      <div style="box-sizing: border-box; color: #18181b; background-color: #F5F7FA; border: 1px solid #e6e8f057; height: 38px; width: fit-content; border-radius: 14px; padding: 6px">
                         <img loading="lazy" class="sm-w-6" src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FFrame.png?alt=media&token=ddeed02a-f189-4e42-a804-79763e35c7e7" style="box-sizing: border-box; color: #18181b; width: 28px" width="28" alt>
                       </div>
                     </a>
                   </td>
                   <td style="box-sizing: border-box; color: #18181b; width: 60px">
                     <a href="https://www.instagram.com/livoapp/" style="box-sizing: border-box; color: #18181b">
-                      <div style="box-sizing: border-box; color: #18181b; background-color: #fff; border: 1px solid #e9ecf2; height: 38px; width: fit-content; border-radius: 14px; padding: 6px">
+                      <div style="box-sizing: border-box; color: #18181b; background-color: #F5F7FA; border: 1px solid #e6e8f057; height: 38px; width: fit-content; border-radius: 14px; padding: 6px">
                         <img loading="lazy" class="sm-w-6" src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FFrame-1.png?alt=media&token=ad760e02-6e6e-4d7f-b23c-fd9410e774d8" style="box-sizing: border-box; color: #18181b; width: 28px" width="28" alt>
                       </div>
                     </a>
                   </td>
                   <td align="left" style="box-sizing: border-box; color: #18181b">
                     <a href="mailto:contato@livoapp.com.br" style="box-sizing: border-box; color: #18181b">
-                      <div style="box-sizing: border-box; color: #18181b; background-color: #fff; border: 1px solid #e9ecf2; height: 38px; width: fit-content; border-radius: 14px; padding: 6px">
+                      <div style="box-sizing: border-box; color: #18181b; background-color: #F5F7FA; border: 1px solid #e6e8f057; height: 38px; width: fit-content; border-radius: 12px; padding: 6px">
                         <img loading="lazy" class="sm-w-6" src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FFrame-2.png?alt=media&token=557e308f-7b51-49aa-9e21-6d6469c4315d" style="box-sizing: border-box; color: #18181b; width: 28px" width="28" alt>
                       </div>
                     </a>
