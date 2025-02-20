@@ -12,22 +12,28 @@ language: pt
           <div class="pl-1">
             <h1 data-title class="font-semibold text-center -tracking-[1.2px]">Acesso de visitante</h1>
             <x-spacer height="13px" />
-            <p data-content class="text-center max-w-[350px] mx-auto">
-              Olá <strong class="font-semibold text-[#7D40AC]">Diego Santana</strong>, Informamos que seu visitante
-              <strong class="font-semibold text-[#7D40AC]">Pablo Novaes</strong> acabou de entrar no condomínio.
+            <p data-subtitle class="text-center max-w-[350px] mx-auto font-normal">
+              Olá Diego Santana, Informamos que seu visitante Pablo Novaes acabou de entrar no condomínio.
             </p>
           </div>
-          <x-spacer height="22px" />
-          <table class="w-full">
-            <tr align="center">
-              <td>
-                <img
-                  src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FIMG_20220723_191648_093.jpg?alt=media&token=9cd547ad-fe3d-4a59-97b6-b0ee31349847"
-                  alt="" class="w-full max-w-[350px] [box-shadow:0_0_0_3px_#7D40AC] rounded-[40px]" />
-              </td>
-            </tr>
-          </table>
-          <x-spacer height="15px" />
+          <x-spacer height="14px" />
+          <div class="bg-[#663C9D] rounded-[30px] text-center">
+            <header class="py-1">
+              <p class="text-white font-semibold">Pablo Novaes</p>
+            </header>
+            <x-card class="p-2">
+              <table class="w-full">
+                <tr align="center">
+                  <td>
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FIMG_20220723_191648_093.jpg?alt=media&token=9cd547ad-fe3d-4a59-97b6-b0ee31349847"
+                      alt="" class="w-[50%] max-w-[350px] rounded-3xl" />
+                  </td>
+                </tr>
+              </table>
+            </x-card>
+          </div>
+          <!-- <x-spacer height="15px" />
           <x-card class="p-4 pt-5">
             <table class="w-full">
               <tr align="center">
@@ -41,7 +47,7 @@ language: pt
                 </td>
               </tr>
             </table>
-          </x-card>
+          </x-card> -->
         </td>
       </tr>
     </table>
