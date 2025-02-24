@@ -1,31 +1,145 @@
 ---
-preheader: .
+preheader: Sua encomenda acabou de chegar.
 language: pt
 ---
 <x-main>
-    <div class="-tracking-[.3px] [&>*p]:m-0 py-4 rounded-2xl">
-        <table align="center" class="m-0 mx-auto">
-            </tr>
-            <tr>
-                <td class="w-[552px] max-w-full">
-                    <!-- src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2Fimage%20103.jpg?alt=media&token=30397929-5c71-4c1e-9cf8-2c9958382147" -->
-                    <!-- src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2Ftag.png?alt=media&token=65323834-78fb-4e3d-bee4-45676a138b5c" -->
-                    <img src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FPot%20(1).png?alt=media&token=4208dece-c472-4d81-974f-8adc8dca5172"
-                        class="object-cover w-full rounded-3xl" alt="">
-                    <x-spacer height="4px" />
-                    <x-card class="p-4">
-                        <p data-content class="px-1 mx-auto">
-                            Olá <strong class="font-semibold text-[#5C307E]">Diego Santana</strong>, Informamos que seu
-                            visitante
-                            <strong class="font-semibold text-[#5C307E]">Pablo Novaes</strong> acabou de entrar no
-                            condomínio.
-                        </p>
-                    </x-card>
-                </td>
-            </tr>
-        </table>
-        </td>
-        </tr>
-        </table>
+    <x-spacer height="10px" />
+    <div class="max-w-[600px] overflow-auto bg-[#fff]">
+        <div class="text-center py-2 pt-3">
+            <img src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FVector%20(5).png?alt=media&token=9a784cd7-0d4e-45ea-a9e0-4d04994511bb"
+                alt="condominio-logo" class="w-[40px] text-white">
+        </div>
+        <header class="p-6 py-16 header-gradient ">
+            <!-- <h1 data-title class="-tracking-[1.4px] text-white">Comunicado de reunião</h1>
+            <h3 data-statement-subtitle class="font-medium -tracking-[1.4px] text-white/90">Você recebeu um novo
+                comunicado
+                do seu condominio</h3> -->
+        </header>
+        <div class="bg-[#ffffff] p-6">
+            <h1 data-subtitle class="-tracking-[.8px]">Sua encomenda chegou!</span>
+            </h1>
+            <x-spacer height="10px" />
+            <p data-content class="-tracking-[1px]">
+                <span>
+                    Olá<span class="text-[#5937c0]"> Diego Santana,</span>
+                </span>
+                Informamos que sua encomenda chegou no condomnio e já pode ser retirada.
+            </p>
+            <x-spacer height="10px" />
+            <div class="header-gradient rounded-[30px] text-center">
+                <div class="p-2 pt-[10px] bg-[#fff] [border:solid_1px_#ebeff6] rounded-3xl">
+                    <table class="w-full">
+                        <tr align="center">
+                            <td>
+                                <div class="py-1 pending-tag  w-fit px-2 rounded-md mx-auto">
+                                    <p data-notify class="text-[#FFD207]">Pendente</p>
+                                </div>
+                                <x-spacer height="10px" />
+                                <img src="https://imagens.ebc.com.br/2MupZTQZN10kmC8fsnZI17ct6Q8=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2024/06/01/_ja_2712.jpg?itok=pT_XVx6N"
+                                    alt="" class="max-w-[450px] w-full object-cover rounded-3xl" />
+                            </td>
+                        </tr>
+                        <tr class="h-1.5"></tr>
+                        <tr>
+                            <td>
+                                <strong>Fone de ouvido</strong>
+                                <br>
+                                <span>#512345</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <footer class="py-1">
+                    <p data-default-message class="text-white">Pablo Novaes - Livo App</p>
+                </footer>
+            </div>
+            <!-- <x-spacer height="10px" />
+            <img class="w-full h-full rounded-[30px] mx-auto [border:solid_6px_#F6F6FD]"
+                src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2Freunion%20(1).jpg?alt=media&token=077b4cae-517d-4ab8-836e-370eed4ee7dd"
+                alt=""> -->
+        </div>
+        <div class="bg-[#F8F9FA] p-6">
+            <img src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FLogo%20(4).png?alt=media&token=b71580ae-371a-4672-8410-313f3c61324b"
+                class="w-16" alt="livo-logo">
+            <x-spacer height="10px" />
+            <p data-default-message class="w-[86%]">
+                Essa notificação foi enviada ao endereço de e-mail associado
+                a sua conta LIVO.
+            </p>
+            <x-spacer height="10px" />
+            <p data-default-message class="w-[86%]">
+                Não responda a este e-mail, caso necessite de ajuda, entre em contato com nosso suporte
+            </p>
+            <x-spacer height="10px" />
+            <table class="w-full" align="center">
+                <tr class="font-semibold">
+                    <td class="-tracking-[.6px]">Contatos</td>
+                </tr>
+                <tr class="h-1"></tr>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td class="bg-white [border:solid_1px_#E9ECF2] rounded-[14px] p-1.5">
+                                    <a
+                                        href="https://api.whatsapp.com/send?phone=5511991534123&text=Ol%C3%A1%2C%20gostaria%20de%20ajuda%20com%20a%20plataforma%20Livo.">
+                                        <div class="h-7">
+                                            <img loading="lazy" class="w-7 h-7 text-white"
+                                                src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2Fwpp.png?alt=media&token=cb113f85-df38-49df-b8c4-996c9e1746c8"
+                                                alt="WhatsApp" />
+                                        </div>
+                                    </a>
+                                </td>
+
+                                <td class="w-1"></td>
+
+                                <td class="bg-white [border:solid_1px_#E9ECF2] rounded-[14px] p-1.5">
+                                    <a href="https://www.instagram.com/livoapp/">
+                                        <div class="h-[28px]">
+                                            <img loading="lazy" class="w-7 h-7 text-white"
+                                                src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FFrame-1.png?alt=media&token=ad760e02-6e6e-4d7f-b23c-fd9410e774d8"
+                                                alt="Instagram" />
+                                        </div>
+                                    </a>
+                                </td>
+
+                                <td class="w-1"></td>
+
+                                <td class="bg-white [border:solid_1px_#E9ECF2] rounded-[14px] p-1.5">
+                                    <a href="mailto:contato@livoapp.com.br">
+                                        <div class="h-[28px]">
+                                            <img loading="lazy" class="w-7 h-7 text-white"
+                                                src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FFrame-2.png?alt=media&token=557e308f-7b51-49aa-9e21-6d6469c4315d"
+                                                alt="Email" />
+                                        </div>
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <x-spacer height="10px" />
+            <table class="w-full" align="center">
+                <tr class="font-semibold">
+                    <td class="-tracking-[.6px]">Transparência</td>
+                </tr>
+                <tr class="h-1"></tr>
+                <tr>
+                    <td>
+                        <a href="https://livoapp.com.br/lgpd.php" data-notify class="no-underline">politica de
+                            privacidade</a>
+                    </td>
+                </tr>
+            </table>
+            <x-spacer height="10px" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FLGPD.png?alt=media&token=d01a856e-bf78-4457-93cf-d43e99417590"
+                class="w-28" alt="">
+        </div>
+        <footer class="p-4 header-gradient px-6">
+            <div class="font-light text-xs text-white -tracking-[1px] text-center">
+                &copy; {{new Date().getFullYear()}} Livo App. Todos os direitos reservados
+            </div>
+        </footer>
     </div>
 </x-main>
