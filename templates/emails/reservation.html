@@ -1,17 +1,17 @@
 ---
-preheader: Sua encomenda acabou de chegar.
+preheader: Houve uma atualização na sua reserva de espaço, confira:.
 language: pt
 ---
 <x-main>
     <div class="bg-[#ffffff] p-6">
-        <h1 data-subtitle class="-tracking-[.8px]">Sua encomenda chegou!</span>
+        <h1 data-subtitle class="-tracking-[.8px]">Atualização de reserva</span>
         </h1>
         <x-spacer height="10px" />
         <p data-content class="-tracking-[1px]">
             <span>
                 Olá<span class="text-[#5937c0]"> Diego Santana,</span>
             </span>
-            Informamos que sua encomenda chegou no condomnio e já pode ser retirada.
+            Informamos que sua reserva de espaço foi confirmada.
         </p>
         <x-spacer height="20px" />
         <div class="rounded-3xl border overflow-auto custom-card-bg pb-1.5">
@@ -22,9 +22,9 @@ language: pt
                     <td>
                         <table class="w-fit">
                             <tr>
-                                <td>
-                                    <img src="https://droper-media.us-southeast-1.linodeobjects.com/11420221410911.webp"
-                                        class="bg-[#fff] rounded-3xl border size-42 object-contain p-2" alt="">
+                                <td align="center">
+                                    <img src="https://a0.muscache.com/im/pictures/e3fa44a8-82ba-4b26-8260-826ec9d4007c.jpg?im_w=1440&im_format=avif&im_origin=fuzzy"
+                                        class="bg-[#fff] rounded-3xl border w-[90%] object-fill p-1.5" alt="">
                                 </td>
                             </tr>
                         </table>
@@ -37,11 +37,8 @@ language: pt
                         <table class="w-full" align="center">
                             <tr align="center">
                                 <td>
-                                    <p data-name>Air Jordan 4 - Military Black</p>
-                                    <x-spacer height="2px" />
-                                    <p data-subtext>#98614</p>
-                                    <x-spacer height="2px" />
-                                    <div class="pending-tag w-fit px-2 py-px">Pendente</div>
+                                    <x-spacer height="8px" />
+                                    <div class="approved-tag w-fit px-2 py-px">Aprovado</div>
                                 </td>
                             </tr>
                         </table>
@@ -56,7 +53,18 @@ language: pt
                             align="center">
                             <tr class="h-8">
                                 <td align="start">
-                                    <p data-subtext>Recebimento</p>
+                                    <p data-subtext>Espaço</p>
+                                </td>
+                                <td align="end">
+                                    <p data-text>Academia</p>
+                                </td>
+                            </tr>
+                            <tr class="bg-[#E6E6E6] h-px">
+                                <td colspan="2"></td>
+                            </tr>
+                            <tr class="h-8">
+                                <td align="start">
+                                    <p data-subtext>Data</p>
                                 </td>
                                 <td align="end">
                                     <p data-text>27/02/2025</p>
@@ -89,12 +97,6 @@ language: pt
                     <td class="min-w-1.5"></td>
                 </tr>
             </table>
-
         </div>
-        <!-- <x-spacer height="10px" />
-            <img class="w-full h-full rounded-[30px] mx-auto [border:solid_6px_#F6F6FD]"
-                src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2Freunion%20(1).jpg?alt=media&token=077b4cae-517d-4ab8-836e-370eed4ee7dd"
-                alt=""> -->
     </div>
-
 </x-main>

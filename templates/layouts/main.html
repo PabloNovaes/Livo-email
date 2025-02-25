@@ -29,8 +29,26 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" media="screen">
   <style type="text/css">
+    /* ======================= */
+    /* 📦 Tailwind Directives   */
+    /* ======================= */
     @tailwind components;
     @tailwind utilities;
+
+    /* ======================= */
+    /* 🌐 Global Reset & Base   */
+    /* ======================= */
+    * {
+      box-sizing: border-box !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      color: black;
+    }
+
+    body {
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
 
     p,
     h1,
@@ -42,19 +60,15 @@
       margin: 0 !important;
     }
 
-    body {
-      -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
+    /* ======================= */
+    /* 🟡 Borders & Layout      */
+    /* ======================= */
+    .border {
+      border: solid 1px #E6E6E6;
     }
 
-    * {
-      filter: invert(0) !important;
-      mix-blend-mode: normal !important;
-      color-scheme: light only !important;
-      box-sizing: border-box !important;
-      margin: 0 !important;
-      padding: 0 !important;
-      color: black;
+    .border-bottom {
+      border-bottom: solid 1px #E6E6E6;
     }
 
     .card {
@@ -62,36 +76,23 @@
       border: solid 1px #b3b5bb2f !important;
     }
 
-    /* 
-    [data-title] {
-      font-size: 1.4em;
-      line-height: 1.1em;
+    .custom-card-bg {
+      background: linear-gradient(to top, white 74%, #f8f9fa 20%);
+      width: 100%;
+      padding-bottom: 1rem;
+      height: fit-content;
     }
 
-    [data-subtitle] {
-      font-size: 0.85em;
-      line-height: .9em;
-      letter-spacing: -.5px;
-    }
-
-    [data-notify] {
-      font-size: .82em;
-      line-height: .9em;
-      letter-spacing: -.5px;
-    } */
-
-    .bg-custom {
-      background: url('https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FPot%20(11).png?alt=media&token=7fdc57d8-2027-4a34-9d50-f165f847d406') top/cover no-repeat;
-    }
-
-    .statement-bg-custom {
-      background: url('https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FFrame%20427321898%20(6).png?alt=media&token=33e482e0-48c8-4bc6-a2ed-16787ffad82a')center top/cover no-repeat
-    }
-
+    /* ======================= */
+    /* 🎨 Backgrounds & Images  */
+    /* ======================= */
     .header-gradient {
-      background: url('https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2Fstatement-bg.png?alt=media&token=62694f46-93a2-49a8-b78a-4c01ab8b6074')center top/cover no-repeat;
+      background: url('https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2Fstatement-bg%20(4).jpg?alt=media&token=b16860c8-f182-4ed2-bcf2-330b3bd0ac4c') center top/cover no-repeat;
     }
 
+    /* ======================= */
+    /* ✨ Typography & Text     */
+    /* ======================= */
     .gradient-text {
       background-image: linear-gradient(365deg, #353C74, #9C3FFF);
       -webkit-background-clip: text;
@@ -100,10 +101,23 @@
       font-weight: 900;
     }
 
+    [data-statement-subtitle],
+    [data-statement-title],
+    [data-title],
+    [data-subtitle],
+    [data-content],
+    [data-notify],
+    [data-default-message],
+    [data-name],
+    [data-subtext],
+    [data-text] {
+      letter-spacing: -0.5px;
+      line-height: 1.2em;
+    }
 
     [data-statement-subtitle] {
       font-size: 1.2em !important;
-      line-height: .95em;
+      line-height: 0.95em;
     }
 
     [data-statement-title] {
@@ -112,38 +126,65 @@
     }
 
     [data-title] {
-      font-size: 1.80em !important;
-      line-height: .90em;
+      font-size: 1.8em !important;
+      line-height: 0.9em;
     }
 
     [data-subtitle] {
       font-size: 1.7em !important;
-      line-height: .95em;
+      line-height: 0.95em;
     }
 
     [data-content] {
       font-size: 1.15em !important;
-      letter-spacing: -.5px;
-      line-height: 1.2em;
     }
 
     [data-notify] {
       font-size: 1em !important;
-      line-height: .9em;
-      letter-spacing: -.5px;
+      line-height: 0.9em;
+    }
+
+    [data-name] {
+      font-size: 1.08em !important;
+      font-weight: 600;
     }
 
     [data-default-message] {
-      font-size: 1.08em !important;
-      line-height: 1.2em;
-      letter-spacing: -.5px;
+      font-size: 1.06em !important;
     }
 
+    [data-subtext] {
+      font-size: 1.03em !important;
+      color: #656370;
+      font-weight: 600 !important;
+    }
+
+    [data-text] {
+      font-size: 1.03em !important;
+      color: black;
+      font-weight: 600 !important;
+    }
+
+    /* ======================= */
+    /* 🏷️ Tags & Indicators     */
+    /* ======================= */
     .pending-tag {
       background-color: #fef7cd;
       border: solid 1px #fef1a4;
+      color: #FFC107;
+      border-radius: 8px;
     }
 
+    .approved-tag {
+      background-color: #21dc6c33;
+      border: solid 1px #21dc6c33;
+      color: #21dc6c;
+      border-radius: 8px;
+    }
+
+    /* ======================= */
+    /* 📱 Responsive (Mobile)   */
+    /* ======================= */
     @media (max-width: 600px) {
       .sm-w-6 {
         width: 24px !important;
@@ -159,149 +200,125 @@
       }
     }
   </style>
+
   <stack name="head" />
 </head>
 
 <body style="color-scheme: light only;"
-  class="m-0 w-full [word-break:break-word] font-inter antialiased [-webkit-font-smoothing:antialiased] bg-[#ebf0f6] p-3 {{ page.bodyClass || '' }}">
+  class="m-0 w-full [word-break:break-word] p-2.5 font-inter antialiased [-webkit-font-smoothing:antialiased] bg-[#ebf0f6] {{ page.bodyClass || '' }}">
   <if condition="page.preheader">
     <div class="hidden">
       {{{ page.preheader }}}
       <each loop="item in Array.from(Array(150))">&#8199;&#65279;&#847; </each>
     </div>
   </if>
-  <table class="mx-auto w-full max-w-[650px]">
-    <tr>
+  <table class="mx-auto">
+    <tr">
       <td>
         <div aria-roledescription="email" aria-label="{{{ page.title || '' }}}" lang="{{ page.language || 'en' }}">
-          <!-- <div class="text-center pb-0">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FLogo%20(4).png?alt=media&token=b71580ae-371a-4672-8410-313f3c61324b"
-              alt="condominio-logo" class="w-[80px] p-1.5 rounded-lg text-white">
-          </div> -->
-          <yield />
+          <div class="max-w-[600px] overflow-auto bg-[#fff]">
+            <div class="text-center py-2 pt-3">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FVector%20(5).png?alt=media&token=9a784cd7-0d4e-45ea-a9e0-4d04994511bb"
+                alt="condominio-logo" class="w-[40px] grayscale text-white">
+            </div>
+            <header class="p-6 py-16 header-gradient"></header>
+            <yield />
+            <div class="bg-[#F8F9FA] p-6">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FLogo%20(4).png?alt=media&token=b71580ae-371a-4672-8410-313f3c61324b"
+                class="w-16" alt="livo-logo">
+              <x-spacer height="10px" />
+              <p data-default-message class="w-[86%]">
+                Essa notificação foi enviada ao endereço de e-mail associado
+                a sua conta LIVO.
+              </p>
+              <x-spacer height="10px" />
+              <p data-default-message>
+                Não responda a este e-mail, caso necessite de ajuda, entre em contato com nosso suporte via <a
+                  href="https://api.whatsapp.com/send?phone=5511991534123&text=Ol%C3%A1%2C%20gostaria%20de%20ajuda%20com%20a%20plataforma%20Livo."
+                  class="text-[#7D40AC]">WhatsApp</a>
+              </p>
+              <x-spacer height="10px" />
+              <table class="w-full">
+                <tr class="font-semibold">
+                  <td class="-tracking-[.6px]">Contatos</td>
+                </tr>
+                <tr class="h-1"></tr>
+                <tr>
+                  <td>
+                    <table>
+                      <tr>
+                        <td class="bg-white [border:solid_1px_#E9ECF2] rounded-[14px] p-1.5">
+                          <a
+                            href="https://api.whatsapp.com/send?phone=5511991534123&text=Ol%C3%A1%2C%20gostaria%20de%20ajuda%20com%20a%20plataforma%20Livo.">
+                            <div class="h-7">
+                              <img loading="lazy" class="w-7 h-7 text-white"
+                                src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2Fwpp.png?alt=media&token=cb113f85-df38-49df-b8c4-996c9e1746c8"
+                                alt="WhatsApp" />
+                            </div>
+                          </a>
+                        </td>
+
+                        <td class="w-1"></td>
+
+                        <td class="bg-white [border:solid_1px_#E9ECF2] rounded-[14px] p-1.5">
+                          <a href="https://www.instagram.com/livoapp/">
+                            <div class="h-[28px]">
+                              <img loading="lazy" class="w-7 h-7 text-white"
+                                src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FFrame-1.png?alt=media&token=ad760e02-6e6e-4d7f-b23c-fd9410e774d8"
+                                alt="Instagram" />
+                            </div>
+                          </a>
+                        </td>
+
+                        <td class="w-1"></td>
+
+                        <td class="bg-white [border:solid_1px_#E9ECF2] rounded-[14px] p-1.5">
+                          <a href="mailto:contato@livoapp.com.br">
+                            <div class="h-[28px]">
+                              <img loading="lazy" class="w-7 h-7 text-white"
+                                src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FFrame-2.png?alt=media&token=557e308f-7b51-49aa-9e21-6d6469c4315d"
+                                alt="Email" />
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <x-spacer height="10px" />
+              <table class="w-full" align="center">
+                <tr class="font-semibold">
+                  <td class="-tracking-[.6px]">Transparência</td>
+                </tr>
+                <tr class="h-1"></tr>
+                <tr>
+                  <td>
+                    <a href="https://livoapp.com.br/lgpd.php" data-notify class="no-underline">politica de
+                      privacidade</a>
+                  </td>
+                </tr>
+              </table>
+              <x-spacer height="10px" />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FLGPD.png?alt=media&token=d01a856e-bf78-4457-93cf-d43e99417590"
+                class="w-28" alt="">
+            </div>
+
+
+            <footer class="p-4 bg-[#fff] px-6">
+              <div class="font-light text-xs -tracking-[1px] text-center">
+                &copy; {{new Date().getFullYear()}} Livo App. Todos os direitos reservados
+              </div>
+            </footer>
+          </div>
         </div>
       </td>
-    </tr>
+      </tr>
   </table>
   </div>
 </body>
 
 </html>
-
-<!-- <div class=" max-w-[450px] mx-auto">
-  <table class="w-full">
-    <tr align="center" class="text-center">
-      <td>
-        <p class="opacity-75" data-default-message>
-          Essa notificação foi enviada ao endereço de e-mail
-          associado a sua conta LIVO.
-        </p>
-      </td>
-    </tr>
-    <tr class="h-1"></tr>
-    <tr align="center" class="text-center">
-      <td>
-        <p class="opacity-75" data-default-message>
-          Não responda a este e-mail, caso necessite de ajuda,
-          entre em contato com nosso suporte via <a target="_blank" class="text-[#5C307E]"
-            href="https://api.whatsapp.com/send?phone=5511991534123&text=Ol%C3%A1%2C%20gostaria%20de%20ajuda%20com%20a%20plataforma%20Livo.">
-            WhatsApp
-          </a>
-        </p>
-      </td>
-    </tr>
-    <tr class="h-2"></tr>
-
-  </table>
-  <x-spacer height="15px" />
-  <table class="w-full" align="center">
-    <tr align="center">
-      <td>
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2Fico%20(1).png?alt=media&token=c0a9eb99-5e50-48fa-8d3a-144c380f5548"
-          class="w-14" alt="" />
-      </td>
-    <tr align="center" class="font-semibold">
-      <td>Livo App</td>
-    </tr>
-    <tr align="center" class="font-normal text-xs">
-      <td>Modulos que conectam</td>
-    </tr>
-  </table>
-  <x-spacer height="12px" />
-  <table class="w-full">
-    <tr align="center">
-      <td>
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FLGPD.png?alt=media&token=d01a856e-bf78-4457-93cf-d43e99417590"
-          class="w-28" alt="">
-      </td>
-    </tr>
-  </table>
-  <x-spacer height="5px" />
-  <table class="w-full" align="center">
-    <tr align="center" class="font-semibold">
-      <td colspan="3">Contatos</td>
-    </tr>
-    <tr class="h-1"></tr>
-
-    <tr align="center">
-      <td>
-        <div>
-          <table>
-            <tr>
-              <td class="card rounded-xl  p-1">
-                <a href="https://api.whatsapp.com/send?phone=5511991534123&text=Ol%C3%A1%2C%20gostaria%20de%20ajuda%20com%20a%20plataforma%20Livo."">
-                              <div class=" h-7">
-                  <img loading="lazy" class="w-7 h-7"
-                    src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2Fwpp.png?alt=media&token=cb113f85-df38-49df-b8c4-996c9e1746c8" />
-
-        </div>
-        </a>
-      </td>
-      <td class="w-2"></td>
-      <td class="card rounded-xl  p-1">
-        <a href="https://www.instagram.com/livoapp/">
-          <div class="h-[28px]">
-            <img loading="lazy" class="w-7 h-7"
-              src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FFrame-1.png?alt=media&token=ad760e02-6e6e-4d7f-b23c-fd9410e774d8" />
-
-          </div>
-        </a>
-      </td>
-      <td class="w-2"></td>
-      <td class="card rounded-xl  p-1">
-        <a href="mailto:contato@livoapp.com.br">
-          <div class="h-[28px]">
-            <img loading="lazy" class="w-7 h-7"
-              src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FFrame-2.png?alt=media&token=557e308f-7b51-49aa-9e21-6d6469c4315d" />
-
-          </div>
-        </a>
-      </td>
-    </tr>
-  </table>
-</div>
-</td>
-</tr>
-<table class="w-full">
-  <tr>
-    <td>
-      <p class="text-xs text-center pt-3">
-        LIVO TECNOLOGIA DA INFORMACAO LTDA
-        <br />
-        CNPJ: 40.008.355/0001-41
-      </p>
-    </td>
-  </tr>
-  <tr class="h-1"></tr>
-  <tr align="center">
-    <td>
-      <span class="font-medium text-sm text-center">
-        &copy; {{new Date().getFullYear()}} Livo App
-      </span>
-    </td>
-  </tr>
-</table>
-</div> -->
