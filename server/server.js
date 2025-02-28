@@ -18,7 +18,7 @@ app.get("/invite", async (req, res) => {
       from: '"Livo App" <noreaply@livoapp.com.br>',
       to: [
         "ppablo.0028922@gmail.com",
-        "contato@livoapp.com.br",
+        // "contato@livoapp.com.br",
         // "david@visstas.com",
         "pablo.ng.macedo@outlook.com",
         // "danyyandrade25@gmail.com",
@@ -49,6 +49,11 @@ app.get("/invite", async (req, res) => {
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" media="screen">
+  <style type="text/css">
+    .hover-brightness-75:hover {
+      filter: brightness(.75) !important;
+    }
+  </style>
 </head>
 <body style="color: black; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color-scheme: light only; box-sizing: border-box; margin: 0; width: 100%; background-color: #ebf0f6; padding: 10px; font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; word-break: break-word">
   <div style="color: black; box-sizing: border-box; margin: 0; padding: 0; display: none">
@@ -63,7 +68,9 @@ app.get("/invite", async (req, res) => {
             <div style="color: black; box-sizing: border-box; margin: 0; padding: 12px 0 8px; text-align: center">
               <img src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FVector%20(5).png?alt=media&token=9a784cd7-0d4e-45ea-a9e0-4d04994511bb" alt="condominio-logo" style="box-sizing: border-box; margin: 0; padding: 0; width: 40px; color: #fffffe; filter: grayscale(100%)" width="40">
             </div>
-            <header style="color: black; background: url('https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2Fstatement-bg%20(4).jpg?alt=media&token=b16860c8-f182-4ed2-bcf2-330b3bd0ac4c') center top/cover no-repeat; box-sizing: border-box; margin: 0; padding: 64px 24px"></header>
+            <header style="color: black; box-sizing: border-box; margin: 0; padding: 0">
+              <img src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2Fstatement-bg%20(4).jpg?alt=media&token=b16860c8-f182-4ed2-bcf2-330b3bd0ac4c" alt style="color: black; box-sizing: border-box; margin: 0; padding: 0; aspect-ratio: 16 / 9; max-height: 128px; width: 100%; object-fit: cover">
+            </header>
             <div style="color: black; box-sizing: border-box; margin: 0; background-color: #ffffff; padding: 24px; text-align: center">
               <h1 data-subtitle style="color: black; line-height: 0.95em; box-sizing: border-box; padding: 0; margin: 0; letter-spacing: -.8px; font-size: 1.7em">
                 Você foi convidado!
@@ -71,13 +78,45 @@ app.get("/invite", async (req, res) => {
               <div role="separator" style="color: black; line-height: 10px; box-sizing: border-box; margin: 0; padding: 0">&zwj;</div>
               <p data-content style="color: black; line-height: 1.2em; box-sizing: border-box; padding: 0; margin: 0; letter-spacing: -1px; font-size: 1.15em">
                 <span style="color: black; box-sizing: border-box; margin: 0; padding: 0">
-                Olá<strong style="box-sizing: border-box; margin: 0; padding: 0; font-weight: 900; color: #5937c0"> Diego Santana,</strong>
+                Olá<strong style="box-sizing: border-box; margin: 0; padding: 0; font-weight: 900; color: #5e3fbc"> Diego Santana,</strong>
             </span>
-                agora você pode utilizar a <strong style="box-sizing: border-box; margin: 0; padding: 0; font-weight: 900; color: #5937c0">Facial</strong> para entrar no condomínio de maneira rápida e
-                prática.
+                agora você pode utilizar o <strong style="box-sizing: border-box; margin: 0; padding: 0; font-weight: 900; color: #5e3fbc">reconhecimento facial</strong> para entrar no condomínio de forma
+                prática e segura.
               </p>
               <div role="separator" style="color: black; line-height: 20px; box-sizing: border-box; margin: 0; padding: 0">&zwj;</div>
-              <img src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2Ffacial.jpg?alt=media&token=a026ef30-89c6-4afb-be55-251e531233d5" alt style="color: black; box-sizing: border-box; padding: 0; margin: 0 auto; height: 100%; width: 100%; border-radius: 30px; object-fit: cover; border: 6px solid #f6f6fd">
+              <img src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FGroup%20226%20(3).png?alt=media&token=99115971-af12-4da4-af14-0a4da9ac1a05" style="color: black; box-sizing: border-box; padding: 0; margin: 0 auto; width: 100%; max-width: 300px; border-radius: 30px; object-fit: cover" alt>
+              <div role="separator" style="color: black; line-height: 15px; box-sizing: border-box; margin: 0; padding: 0">&zwj;</div>
+              <button class="hover-brightness-75" style="color: black; box-sizing: border-box; margin: 0; width: 100%; max-width: 420px; cursor: pointer; border-radius: 12px; border-style: none; background-color: #5e3fbc; padding: 12px 8px">
+                <table style="color: black; box-sizing: border-box; margin: 0; padding: 0; width: 100%" cellpadding="0" cellspacing="0" role="none">
+                  <tr align="center" style="color: black; box-sizing: border-box; margin: 0; padding: 0">
+                    <td style="color: black; box-sizing: border-box; margin: 0; padding: 0">
+                      <table style="color: black; box-sizing: border-box; margin: 0; padding: 0" cellpadding="0" cellspacing="0" role="none">
+                        <tr align="center" style="color: black; box-sizing: border-box; margin: 0; padding: 0">
+                          <td style="color: black; box-sizing: border-box; margin: 0; padding: 0; vertical-align: middle">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FVector%20(2).png?alt=media&token=2257faec-652f-4ec6-89b4-3fabdf5ea59c" alt style="color: black; box-sizing: border-box; margin: 0; padding: 0; width: 16px; filter: invert(0)" width="16">
+                          </td>
+                          <td style="color: black; box-sizing: border-box; margin: 0; padding: 0 0 0 4px">
+                            <p data-text style="letter-spacing: -0.5px; line-height: 1.2em; box-sizing: border-box; padding: 0; margin: 0; color: #fffffe; font-size: 1.01em; font-weight: 400">Ver local no Google Maps</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </button>
+              <div role="separator" style="color: black; line-height: 20px; box-sizing: border-box; margin: 0; padding: 0">&zwj;</div>
+              <div style="color: black; box-sizing: border-box; margin: 0 auto; border-radius: 12px; border: 1px solid #e6e6e6; background-color: #f8f9fa; padding: 16px">
+                <h3 style="color: black; box-sizing: border-box; padding: 0; margin: 0; text-align: start; font-size: 1.03em">Mensagem do condominio</h3>
+                <p style="color: black; box-sizing: border-box; padding: 0; margin: 0; text-align: start; font-size: 1em">Seja muito bem-vindo! Siga as intruções para entrar no condomnio: </p>
+                <div role="separator" style="color: black; line-height: 10px; box-sizing: border-box; margin: 0; padding: 0">&zwj;</div>
+                <p style="color: black; box-sizing: border-box; padding: 0; margin: 0"></p>
+                <ul style="color: black; box-sizing: border-box; margin: 0; padding: 0 0 0 24px; font-size: 1em">
+                  <li style="color: black; box-sizing: border-box; margin: 0; padding: 0; text-align: start"> Leve seu cartão de visita.</li>
+                  <li style="color: black; box-sizing: border-box; margin: 0; padding: 0; text-align: start">Utilize o reconhecimento facial para entrar.</li>
+                  <li style="color: black; box-sizing: border-box; margin: 0; padding: 0; text-align: start">Siga as instruções do condomínio.</li>
+                </ul>
+                <p style="color: black; box-sizing: border-box; padding: 0; margin: 0"></p>
+              </div>
             </div>
             <div style="color: black; box-sizing: border-box; margin: 0; background-color: #F8F9FA; padding: 24px">
               <img src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FLogo%20(4).png?alt=media&token=b71580ae-371a-4672-8410-313f3c61324b" alt="livo-logo" style="color: black; box-sizing: border-box; margin: 0; padding: 0; width: 64px" width="64">
