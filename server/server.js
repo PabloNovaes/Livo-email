@@ -18,14 +18,14 @@ app.get("/invite", async (req, res) => {
       from: '"Livo App" <noreaply@livoapp.com.br>',
       to: [
         "ppablo.0028922@gmail.com",
-        // "contato@livoapp.com.br",
+        "contato@livoapp.com.br",
         // "david@visstas.com",
         "pablo.ng.macedo@outlook.com",
         // "danyyandrade25@gmail.com",
       ],
       subject: "Você foi convidado!",
       html: `
-      <!DOCTYPE html>
+     <!DOCTYPE html>
 <html lang="pt" xmlns:v="urn:schemas-microsoft-com:vml" style="color: black; box-sizing: border-box; margin: 0; padding: 0">
 <head>
   <meta charset="utf-8">
@@ -50,12 +50,13 @@ app.get("/invite", async (req, res) => {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" media="screen">
   <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
     .hover-brightness-75:hover {
       filter: brightness(.75) !important;
     }
   </style>
 </head>
-<body style="color: black; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color-scheme: light only; box-sizing: border-box; margin: 0; width: 100%; background-color: #ebf0f6; padding: 10px; font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; word-break: break-word">
+<body style="color: black; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: Outfit, sans-serif; color-scheme: light only; box-sizing: border-box; margin: 0; width: 100%; background-color: #ebf0f6; padding: 10px; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; word-break: break-word">
   <div style="color: black; box-sizing: border-box; margin: 0; padding: 0; display: none">
     Você recebeu um convite.
     &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847;
@@ -78,42 +79,32 @@ app.get("/invite", async (req, res) => {
               <div role="separator" style="color: black; line-height: 10px; box-sizing: border-box; margin: 0; padding: 0">&zwj;</div>
               <p data-content style="color: black; line-height: 1.2em; box-sizing: border-box; padding: 0; margin: 0; letter-spacing: -1px; font-size: 1.15em">
                 <span style="color: black; box-sizing: border-box; margin: 0; padding: 0">
-                Olá<strong style="box-sizing: border-box; margin: 0; padding: 0; font-weight: 900; color: #5e3fbc"> Diego Santana,</strong>
-            </span>
-                agora você pode utilizar o <strong style="box-sizing: border-box; margin: 0; padding: 0; font-weight: 900; color: #5e3fbc">reconhecimento facial</strong> para entrar no condomínio de forma
-                prática e segura.
+                Olá<span data-bold style="font-weight: 600; box-sizing: border-box; margin: 0; padding: 0; color: #663C9D"> Diego Santana,</span>
+                </span>
+                agora você pode utilizar a sua <span data-bold style="font-weight: 600; box-sizing: border-box; margin: 0; padding: 0; color: #663C9D">facial</span> para
+                acessar o condomínio de forma prática e segura.
               </p>
               <div role="separator" style="color: black; line-height: 20px; box-sizing: border-box; margin: 0; padding: 0">&zwj;</div>
-              <img src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FGroup%20226%20(3).png?alt=media&token=99115971-af12-4da4-af14-0a4da9ac1a05" style="color: black; box-sizing: border-box; padding: 0; margin: 0 auto; width: 100%; max-width: 300px; border-radius: 30px; object-fit: cover" alt>
-              <div role="separator" style="color: black; line-height: 15px; box-sizing: border-box; margin: 0; padding: 0">&zwj;</div>
-              <button class="hover-brightness-75" style="color: black; box-sizing: border-box; margin: 0; width: 100%; max-width: 420px; cursor: pointer; border-radius: 12px; border-style: none; background-color: #5e3fbc; padding: 12px 8px">
+              <img src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2Fface-scan.png?alt=media&token=a2d878f9-df91-4c81-b434-80b34651fb7e" alt style="color: black; box-sizing: border-box; padding: 0; margin: 0 auto; width: 100%; max-width: 400px">
+              <div role="separator" style="color: black; line-height: 15px; box-sizing: border-box; margin: 0; padding: 0">&zwj;</div> <button class="hover-brightness-75" style="color: black; box-sizing: border-box; margin: 0; width: 100%; max-width: 420px; cursor: pointer; border-radius: 12px; border-style: none; background-color: #663C9D; padding: 16px 8px">
                 <table style="color: black; box-sizing: border-box; margin: 0; padding: 0; width: 100%" cellpadding="0" cellspacing="0" role="none">
                   <tr align="center" style="color: black; box-sizing: border-box; margin: 0; padding: 0">
                     <td style="color: black; box-sizing: border-box; margin: 0; padding: 0">
-                      <table style="color: black; box-sizing: border-box; margin: 0; padding: 0" cellpadding="0" cellspacing="0" role="none">
-                        <tr align="center" style="color: black; box-sizing: border-box; margin: 0; padding: 0">
-                          <td style="color: black; box-sizing: border-box; margin: 0; padding: 0; vertical-align: middle">
-                            <img src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FVector%20(2).png?alt=media&token=2257faec-652f-4ec6-89b4-3fabdf5ea59c" alt style="color: black; box-sizing: border-box; margin: 0; padding: 0; width: 16px; filter: invert(0)" width="16">
-                          </td>
-                          <td style="color: black; box-sizing: border-box; margin: 0; padding: 0 0 0 4px">
-                            <p data-text style="letter-spacing: -0.5px; line-height: 1.2em; box-sizing: border-box; padding: 0; margin: 0; color: #fffffe; font-size: 1.01em; font-weight: 400">Ver local no Google Maps</p>
-                          </td>
-                        </tr>
-                      </table>
+                      <p style="box-sizing: border-box; padding: 0; margin: 0; font-size: 0.94em; color: #fffffe">Ver local no Google Maps</p>
                     </td>
                   </tr>
                 </table>
               </button>
               <div role="separator" style="color: black; line-height: 20px; box-sizing: border-box; margin: 0; padding: 0">&zwj;</div>
               <div style="color: black; box-sizing: border-box; margin: 0 auto; border-radius: 12px; border: 1px solid #e6e6e6; background-color: #f8f9fa; padding: 16px">
-                <h3 style="color: black; box-sizing: border-box; padding: 0; margin: 0; text-align: start; font-size: 1.03em">Mensagem do condominio</h3>
-                <p style="color: black; box-sizing: border-box; padding: 0; margin: 0; text-align: start; font-size: 1em">Seja muito bem-vindo! Siga as intruções para entrar no condomnio: </p>
+                <h3 style="color: black; box-sizing: border-box; padding: 0; margin: 0; text-align: start; font-size: 1.25em">Mensagem do condominio</h3>
+                <p style="color: black; box-sizing: border-box; padding: 0; margin: 0; text-align: start; font-size: 1.1em">Seja muito bem-vindo! Siga as intruções para entrar no condomnio: </p>
                 <div role="separator" style="color: black; line-height: 10px; box-sizing: border-box; margin: 0; padding: 0">&zwj;</div>
                 <p style="color: black; box-sizing: border-box; padding: 0; margin: 0"></p>
-                <ul style="color: black; box-sizing: border-box; margin: 0; padding: 0 0 0 24px; font-size: 1em">
-                  <li style="color: black; box-sizing: border-box; margin: 0; padding: 0; text-align: start"> Leve seu cartão de visita.</li>
-                  <li style="color: black; box-sizing: border-box; margin: 0; padding: 0; text-align: start">Utilize o reconhecimento facial para entrar.</li>
-                  <li style="color: black; box-sizing: border-box; margin: 0; padding: 0; text-align: start">Siga as instruções do condomínio.</li>
+                <ul style="color: black; box-sizing: border-box; margin: 0; padding: 0 0 0 24px; font-size: 1.08em">
+                  <li style="color: black; box-sizing: border-box; margin: 0; padding: 0; text-align: start">Localize e utilize o equipamento de reconhecimento facial na entrada do condomínio.</li>
+                  <li style="color: black; box-sizing: border-box; margin: 0; padding: 0; text-align: start">Se houver algum problema, apresente-se na portaria com o documento que foi utilizado ao preencher o
+                    convite.</li>
                 </ul>
                 <p style="color: black; box-sizing: border-box; padding: 0; margin: 0"></p>
               </div>

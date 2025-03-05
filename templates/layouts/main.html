@@ -29,6 +29,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" media="screen">
   <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
     /* ======================= */
     /* 📦 Tailwind Directives   */
     /* ======================= */
@@ -48,6 +49,11 @@
     body {
       -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
+      font-family: Outfit, sans-serif;
+    }
+
+    span[data-bold] {
+      font-weight: 600;
     }
 
     p,
@@ -88,6 +94,10 @@
     /* ======================= */
     .header-gradient {
       background: url('https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2Fstatement-bg%20(4).jpg?alt=media&token=b16860c8-f182-4ed2-bcf2-330b3bd0ac4c') center top/cover no-repeat;
+    }
+
+    .qrcode-wrapper {
+      @apply rounded-[30px] [border:solid_6px_#F6F6FD] aspect-square max-w-[300px];
     }
 
     /* ======================= */
@@ -205,7 +215,7 @@
 </head>
 
 <body style="color-scheme: light only;"
-  class="m-0 w-full [word-break:break-word] p-2.5 font-inter antialiased [-webkit-font-smoothing:antialiased] bg-[#ebf0f6] {{ page.bodyClass || '' }}">
+  class="m-0 w-full [word-break:break-word] font-airbnb p-2.5 antialiased [-webkit-font-smoothing:antialiased] bg-[#ebf0f6] {{ page.bodyClass || '' }}">
   <if condition="page.preheader">
     <div class="hidden">
       {{{ page.preheader }}}

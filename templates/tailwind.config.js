@@ -8,14 +8,4 @@ module.exports = {
     './emails/**/*.html',
     './layouts/**/*.html',
   ],
-  theme: {
-    extend: {
-      fontFamily: {
-        airbnb: [
-					'Airbnb',
-					'sans-serif'
-				],
-      }
-    }
-  }
 }
