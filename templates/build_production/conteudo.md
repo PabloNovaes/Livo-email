@@ -6,7 +6,7 @@
 
   "Olá Diego Santana, agora você pode utilizar sua facial para entrar no condomínio de forma prática e segura."
 
-    <div style="width:100%; display:flex; background-color: #202020; border-radius: 20px "><img style="max-width: 300px; margin: 0 auto" src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2Fface-scan.png?alt=media&token=a2d878f9-df91-4c81-b434-80b34651fb7e" alt=""/></div>
+    <img style="width: 350px; margin: 0 auto" src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2Fface-scan.png?alt=media&token=a2d878f9-df91-4c81-b434-80b34651fb7e" alt=""/>
 
   </p>
 
@@ -14,7 +14,7 @@
 
   "Olá Diego Santana, apresente na portaria o documento que foi utilizado no preenchimento do convite para entrar no condomínio."
 
-<div style="width:100%; display:flex; background-color: #202020; border-radius: 20px "><img style="max-width: 300px; margin: 0 auto" src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FID%20Card-amico%201.png?alt=media&token=91f1246c-9c24-47fe-8999-0811747f95da" alt=""/></div>
+<img style="max-: 305px; margin: 0 auto" src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FID%20Card-amico%201.png?alt=media&token=91f1246c-9c24-47fe-8999-0811747f95da" alt=""/>
   </p>
 
 - <p style="color: white">QR Code:
