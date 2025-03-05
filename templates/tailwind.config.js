@@ -7,5 +7,5 @@ module.exports = {
     './components/**/*.html',
     './emails/**/*.html',
     './layouts/**/*.html',
-  ],
+  ]
 }

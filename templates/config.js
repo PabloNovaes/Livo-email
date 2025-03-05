@@ -17,5 +17,9 @@ export default {
       source: ['images/**/*.*'],
       destination: 'images',
     },
-  },
+  }, css: {
+    purge: {
+      removeCSSComments: true,
+    }
+  }
 }

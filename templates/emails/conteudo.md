@@ -14,7 +14,7 @@
 
   "Olá Diego Santana, apresente na portaria o documento que foi utilizado no preenchimento do convite para entrar no condomínio."
 
-<img style="max-: 305px; margin: 0 auto" src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FID%20Card-amico%201.png?alt=media&token=91f1246c-9c24-47fe-8999-0811747f95da" alt=""/>
+<img style="width: 305px; margin: 0 auto" src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FID%20Card-amico%201.png?alt=media&token=91f1246c-9c24-47fe-8999-0811747f95da" alt=""/>
   </p>
 
 - <p style="color: white">QR Code:

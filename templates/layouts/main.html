@@ -27,7 +27,6 @@
   </if>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" media="screen">
   <style type="text/css">
     @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
     /* ======================= */
@@ -97,7 +96,13 @@
     }
 
     .qrcode-wrapper {
-      @apply rounded-[30px] [border:solid_6px_#F6F6FD] aspect-square max-w-[300px];
+      border-radius: 30px;
+      border: solid 1px #F6F6FD;
+      max-width: 300px;
+    }
+
+    .doc-or-faceid {
+      max-width: 400px;
     }
 
     /* ======================= */
