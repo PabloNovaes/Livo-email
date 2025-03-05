@@ -51,7 +51,6 @@ app.get("/invite", async (req, res) => {
     <![endif]-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" media="screen">
   <style type="text/css">
     @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
     /* ======================= */
@@ -632,13 +631,16 @@ app.get("/invite", async (req, res) => {
 
 
               <button class="bg-_663C9D border-none w-full max-w-420px rounded-xl p-2 py-4 hover-brightness-75 cursor-pointer">
-                <table class="w-full" cellpadding="0" cellspacing="0" role="none">
-                  <tr align="center">
-                    <td>
-                      <p class="text-white text-0_94em">Ver local no Google Maps</p>
-                    </td>
-                  </tr>
-                </table>
+                <a class="no-underline" href="https://maps.app.goo.gl/RqGsUdQbcVTekLzTA">
+                  <table class="w-full" cellpadding="0" cellspacing="0" role="none">
+                    <tr align="center">
+                      <td>
+                        <p class="text-white text-0_94em">Ver local no Google Maps</p>
+                      </td>
+                    </tr>
+                  </table>
+                </a>
+
               </button>
 
 
