@@ -21,6 +21,6 @@
 
   "Olá Diego Santana, utilize o QR Code a baixo para entrar no condomínio de forma prática e segura."
 
-  > **Observação:** precisa tambem, adicionar a classe **"qrcode-wapper"** para formatar corretamentea imagem do qrcode.
+  > **Observação:** precisa tambem, adicionar a classe **"qrcode-wapper"** para formatar corretamente a imagem do qrcode.
 
   </p>
