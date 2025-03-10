@@ -12,7 +12,532 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-app.get("/invite", async (req, res) => {
+
+app.get("/project", async (_req, res) => {
+  try {
+    const mailOptions = {
+      from: '"Livo App" <noreaply@livoapp.com.br>',
+      to: [
+        "ppablo.0028922@gmail.com",
+        "contato@livoapp.com.br",
+        // "david@visstas.com",
+        "pablo.ng.macedo@outlook.com",
+        // "danyyandrade25@gmail.com",
+      ],
+      subject: "Notificação de projeto",
+      html: `
+      <!DOCTYPE html>
+<html lang="pt" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+  <meta charset="utf-8">
+  <meta name="x-apple-disable-message-reformatting">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light only">
+  <meta name="supported-color-schemes" content="light">
+  <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
+  <!--[if mso]>
+    <noscript>
+      <xml>
+        <o:OfficeDocumentSettings xmlns:o="urn:schemas-microsoft-com:office:office">
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+    </noscript>
+    <style>
+      td,th,div,p,a,h1,h2,h3,h4,h5,h6 {font-family: "Segoe UI", sans-serif; mso-line-height-rule: exactly;}
+    </style>
+    <![endif]-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <style data-embed="" type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+    .m-0 {
+      margin: 0 !important;
+    }
+    .mx-auto {
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+    .hidden {
+      display: none !important;
+    }
+    .aspect-video {
+      aspect-ratio: 16 / 9 !important;
+    }
+    .h-1 {
+      height: 4px !important;
+    }
+    .h-3 {
+      height: 12px !important;
+    }
+    .h-7 {
+      height: 28px !important;
+    }
+    .h-8 {
+      height: 32px !important;
+    }
+    .h-25pc {
+      height: 25% !important;
+    }
+    .h-28px {
+      height: 28px !important;
+    }
+    .h-px {
+      height: 1px !important;
+    }
+    .max-h-128px {
+      max-height: 128px !important;
+    }
+    .w-1 {
+      width: 4px !important;
+    }
+    .w-1_5 {
+      width: 6px !important;
+    }
+    .w-16 {
+      width: 64px !important;
+    }
+    .w-28 {
+      width: 112px !important;
+    }
+    .w-7 {
+      width: 28px !important;
+    }
+    .w-100px {
+      width: 100px !important;
+    }
+    .w-40px {
+      width: 40px !important;
+    }
+    .w-86pc {
+      width: 86% !important;
+    }
+    .w-90pc {
+      width: 90% !important;
+    }
+    .w-90px {
+      width: 90px !important;
+    }
+    .w-fit {
+      width: fit-content !important;
+    }
+    .w-full {
+      width: 100% !important;
+    }
+    .min-w-1_5 {
+      min-width: 6px !important;
+    }
+    .max-w-600px {
+      max-width: 600px !important;
+    }
+    .overflow-auto {
+      overflow: auto !important;
+    }
+    .rounded-2xl {
+      border-radius: 16px !important;
+    }
+    .rounded-3xl {
+      border-radius: 24px !important;
+    }
+    .rounded-14px {
+      border-radius: 14px !important;
+    }
+    .rounded-t-xl {
+      border-top-left-radius: 12px !important;
+      border-top-right-radius: 12px !important;
+    }
+    .border {
+      border-width: 1px !important;
+    }
+    .bg-_E6E6E6 {
+      background-color: #E6E6E6 !important;
+    }
+    .bg-_F8F9FA {
+      background-color: #F8F9FA !important;
+    }
+    .bg-_ebf0f6 {
+      background-color: #ebf0f6 !important;
+    }
+    .bg-_f8f9fa {
+      background-color: #f8f9fa !important;
+    }
+    .bg-_fff {
+      background-color: #fff !important;
+    }
+    .bg-_ffffff {
+      background-color: #ffffff !important;
+    }
+    .bg-white {
+      background-color: #fffffe !important;
+    }
+    .object-cover {
+      object-fit: cover !important;
+    }
+    .object-fill {
+      object-fit: fill !important;
+    }
+    .p-1 {
+      padding: 4px !important;
+    }
+    .p-1_5 {
+      padding: 6px !important;
+    }
+    .p-2_5 {
+      padding: 10px !important;
+    }
+    .p-4 {
+      padding: 16px !important;
+    }
+    .p-6 {
+      padding: 24px !important;
+    }
+    .px-6 {
+      padding-left: 24px !important;
+      padding-right: 24px !important;
+    }
+    .py-2 {
+      padding-top: 8px !important;
+      padding-bottom: 8px !important;
+    }
+    .pb-1_5 {
+      padding-bottom: 6px !important;
+    }
+    .pl-3 {
+      padding-left: 12px !important;
+    }
+    .pr-3 {
+      padding-right: 12px !important;
+    }
+    .pt-3 {
+      padding-top: 12px !important;
+    }
+    .text-center {
+      text-align: center !important;
+    }
+    .text-xs {
+      font-size: 12px !important;
+    }
+    .font-light {
+      font-weight: 300 !important;
+    }
+    .font-semibold {
+      font-weight: 600 !important;
+    }
+    .-tracking-_6px {
+      letter-spacing: -.6px !important;
+    }
+    .-tracking-_8px {
+      letter-spacing: -.8px !important;
+    }
+    .-tracking-1px {
+      letter-spacing: -1px !important;
+    }
+    .text-_21dc6c {
+      color: #21dc6c !important;
+    }
+    .text-_663C9D {
+      color: #663C9D !important;
+    }
+    .text-_7D40AC {
+      color: #7D40AC !important;
+    }
+    .text-white {
+      color: #fffffe !important;
+    }
+    .antialiased {
+      -webkit-font-smoothing: antialiased !important;
+      -moz-osx-font-smoothing: grayscale !important;
+    }
+    .no-underline {
+      text-decoration: none !important;
+    }
+    .grayscale {
+      filter: grayscale(100%) !important;
+    }
+    .-webkit-font-smoothing-antialiased {
+      -webkit-font-smoothing: antialiased !important;
+    }
+    .border-solid_1px__E9ECF2 {
+      border: solid 1px #E9ECF2 !important;
+    }
+    .word-break-break-word {
+      word-break: break-word !important;
+    }
+    * {
+      box-sizing: border-box !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      color: black;
+    }
+    body {
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      font-family: Outfit, sans-serif;
+    }
+    span[data-bold] {
+      font-weight: 600;
+    }
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0 !important;
+    }
+    .border {
+      border: solid 1px #E6E6E6;
+    }
+    .custom-card-bg {
+      background: linear-gradient(to top, white 74%, #f8f9fa 20%);
+      width: 100%;
+      padding-bottom: 1rem;
+      height: fit-content;
+    }
+    [data-statement-subtitle],
+    [data-statement-title],
+    [data-title],
+    [data-subtitle],
+    [data-content],
+    [data-notify],
+    [data-default-message],
+    [data-name],
+    [data-subtext],
+    [data-text] {
+      letter-spacing: -0.5px;
+      line-height: 1.2em;
+    }
+    [data-statement-subtitle] {
+      font-size: 1.2em !important;
+      line-height: 0.95em;
+    }
+    [data-statement-title] {
+      font-size: 1.2em !important;
+      line-height: 1.3em;
+    }
+    [data-title] {
+      font-size: 1.8em !important;
+      line-height: 0.9em;
+    }
+    [data-subtitle] {
+      font-size: 1.7em !important;
+      line-height: 0.95em;
+    }
+    [data-content] {
+      font-size: 1.15em !important;
+    }
+    [data-notify] {
+      font-size: 1em !important;
+      line-height: 0.9em;
+    }
+    [data-name] {
+      font-size: 1.08em !important;
+      font-weight: 600;
+    }
+    [data-default-message] {
+      font-size: 1.06em !important;
+    }
+    [data-subtext] {
+      font-size: 1.01em !important;
+      color: #656370;
+      font-weight: 400 !important;
+    }
+    [data-text] {
+      font-size: 1.01em !important;
+      color: black;
+      font-weight: 400 !important;
+    }
+  </style>
+</head>
+<body style="color-scheme: light only;" class="m-0 w-full word-break-break-word p-2_5 antialiased -webkit-font-smoothing-antialiased bg-_ebf0f6">
+  <div class="hidden">
+    Sua participação em um projeto foi confirmada:.
+    &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847;
+  </div>
+  <table class="mx-auto" cellpadding="0" cellspacing="0" role="none">
+    <tr">
+      <td>
+        <div aria-roledescription="email" aria-label="" lang="pt">
+          <div class="max-w-600px overflow-auto bg-_fff">
+            <div class="text-center py-2 pt-3">
+              <img src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FVector%20(5).png?alt=media&token=9a784cd7-0d4e-45ea-a9e0-4d04994511bb" alt="condominio-logo" class="w-40px grayscale text-white">
+            </div>
+            <header>
+              <img src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2Fstatement-bg%20(4).jpg?alt=media&token=b16860c8-f182-4ed2-bcf2-330b3bd0ac4c" class="w-full aspect-video max-h-128px object-cover" alt="">
+            </header>
+            <div class="bg-_ffffff p-6">
+              <h1 data-subtitle="" class="-tracking-_8px">Participação confirmada!
+              </h1>
+              <div role="separator" style="line-height: 10px">&zwj;</div>
+              <p data-content="" class="-tracking-1px">
+                <span>
+                Olá<span class="text-_663C9D"> Diego Santana,</span>
+                </span>
+                Informamos que sua participação no projeto <span class="text-_663C9D">"Livo LGDP"</span> foi confimada
+              </p>
+              <div role="separator" style="line-height: 20px">&zwj;</div>
+              <div class="rounded-3xl border overflow-auto custom-card-bg pb-1_5">
+                <table class="w-full h-25pc" cellpadding="0" cellspacing="0" role="none">
+                  <tr class="h-3"></tr>
+                  <tr align="center">
+                    <td class="w-1_5"></td>
+                    <td>
+                      <table class="w-fit" cellpadding="0" cellspacing="0" role="none">
+                        <tr>
+                          <td align="center">
+                            <img src="https://blog.synergyco.com.br/wp-content/uploads/2018/03/172165-estender-500-palavras-x-dicas-para-impressionar-seus-clientes-em-uma-reuniao-de-negocios-1000x640.jpg" class="bg-_fff rounded-3xl border w-90pc object-fill p-1_5" alt="">
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="w-1_5"></td>
+                  </tr>
+                  <tr align="center">
+                    <td class="min-w-1_5"></td>
+                  </tr>
+                  <tr class="h-3"></tr>
+                  <tr align="center">
+                    <td class="min-w-1_5"></td>
+                    <td class="border rounded-2xl bg-_f8f9fa">
+                      <table class="w-full p-1" align="center" cellpadding="0" cellspacing="0" role="none">
+                        <tr class="h-8">
+                          <td align="start" class="pl-3">
+                            <p data-subtext="">Titulo</p>
+                          </td>
+                          <td align="end" class="pr-3">
+                            <p data-text="">Livo LGPD</p>
+                          </td>
+                        </tr>
+                        <tr role="separator" class="bg-_E6E6E6 h-px">
+                          <td colspan="2"></td>
+                        </tr>
+                        <tr class="h-8">
+                          <td align="start" class="pl-3">
+                            <p data-subtext="">Descrição</p>
+                          </td>
+                          <td align="end" class="pr-3 w-90px">
+                            <p data-text="">O projeto consiste em...</p>
+                          </td>
+                        </tr>
+                        <tr role="separator" class="bg-_E6E6E6 h-px">
+                          <td colspan="2"></td>
+                        </tr>
+                        <tr class="h-8">
+                          <td align="start" class="pl-3 w-100px">
+                            <p data-subtext="">Participação</p>
+                          </td>
+                          <td align="end" class="pr-3">
+                            <span class="text-_21dc6c w-fit">Confirmada</span>
+                          </td>
+                        </tr>
+                        <tr role="separator" class="bg-_E6E6E6 h-px">
+                          <td colspan="2"></td>
+                        </tr>
+                        <tr class="h-8">
+                          <td align="start" class="pl-3">
+                            <p data-subtext="">Condomínio</p>
+                          </td>
+                          <td align="end" class="pr-3">
+                            <p data-text="">Livo App</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="min-w-1_5"></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="bg-_F8F9FA p-6">
+              <img src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FLogo%20(4).png?alt=media&token=b71580ae-371a-4672-8410-313f3c61324b" class="w-16" alt="livo-logo">
+              <div role="separator" style="line-height: 10px">&zwj;</div>
+              <p data-default-message="" class="w-86pc">
+                Essa notificação foi enviada ao endereço de e-mail associado
+                a sua conta LIVO.
+              </p>
+              <div role="separator" style="line-height: 10px">&zwj;</div>
+              <p data-default-message="">
+                Não responda a este e-mail, caso necessite de ajuda, entre em contato com nosso suporte via <a href="https://api.whatsapp.com/send?phone=5511991534123&text=Ol%C3%A1%2C%20gostaria%20de%20ajuda%20com%20a%20plataforma%20Livo." class="text-_7D40AC">WhatsApp</a>
+              </p>
+              <div role="separator" style="line-height: 10px">&zwj;</div>
+              <table class="w-full" cellpadding="0" cellspacing="0" role="none">
+                <tr class="font-semibold">
+                  <td class="-tracking-_6px">Contatos</td>
+                </tr>
+                <tr class="h-1"></tr>
+                <tr>
+                  <td>
+                    <table cellpadding="0" cellspacing="0" role="none">
+                      <tr>
+                        <td class="bg-white border-solid_1px__E9ECF2 rounded-14px p-1_5">
+                          <a href="https://api.whatsapp.com/send?phone=5511991534123&text=Ol%C3%A1%2C%20gostaria%20de%20ajuda%20com%20a%20plataforma%20Livo.">
+                            <div class="h-7">
+                              <img loading="lazy" class="w-7 h-7 text-white" src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2Fwpp.png?alt=media&token=cb113f85-df38-49df-b8c4-996c9e1746c8" alt="WhatsApp">
+                            </div>
+                          </a>
+                        </td>
+                        <td class="w-1"></td>
+                        <td class="bg-white border-solid_1px__E9ECF2 rounded-14px p-1_5">
+                          <a href="https://www.instagram.com/livoapp/">
+                            <div class="h-28px">
+                              <img loading="lazy" class="w-7 h-7 text-white" src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FFrame-1.png?alt=media&token=ad760e02-6e6e-4d7f-b23c-fd9410e774d8" alt="Instagram">
+                            </div>
+                          </a>
+                        </td>
+                        <td class="w-1"></td>
+                        <td class="bg-white border-solid_1px__E9ECF2 rounded-14px p-1_5">
+                          <a href="mailto:contato@livoapp.com.br">
+                            <div class="h-28px">
+                              <img loading="lazy" class="w-7 h-7 text-white" src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FFrame-2.png?alt=media&token=557e308f-7b51-49aa-9e21-6d6469c4315d" alt="Email">
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <div role="separator" style="line-height: 10px">&zwj;</div>
+              <table class="w-full" align="center" cellpadding="0" cellspacing="0" role="none">
+                <tr class="font-semibold">
+                  <td class="-tracking-_6px">Transparência</td>
+                </tr>
+                <tr class="h-1"></tr>
+                <tr>
+                  <td>
+                    <a href="https://livoapp.com.br/lgpd.php" data-notify="" class="no-underline">politica de
+                      privacidade</a>
+                  </td>
+                </tr>
+              </table>
+              <div role="separator" style="line-height: 10px">&zwj;</div>
+              <img src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FLGPD.png?alt=media&token=d01a856e-bf78-4457-93cf-d43e99417590" class="w-28" alt="">
+            </div>
+            <footer class="p-4 bg-_fff px-6">
+              <div class="font-light text-xs -tracking-1px text-center">
+                &copy; 2025 Livo App. Todos os direitos reservados
+              </div>
+            </footer>
+          </div>
+        </div>
+      </td>
+    </tr">
+  </table>
+</body>
+</html>
+      `
+    };
+
+    // Enviar e-mail
+    const info = await transporter.sendMail(mailOptions);
+
+    res.status(200).json({ message: "E-mail enviado com sucesso!", info });
+  } catch (error) {
+    res.status(400).json({ error: "Erro ao enviar o e-mail", details: error });
+  }
+});
+app.get("/invite", async (_req, res) => {
   try {
     const mailOptions = {
       from: '"Livo App" <noreaply@livoapp.com.br>',
@@ -785,7 +1310,8 @@ app.get("/invite", async (req, res) => {
     res.status(400).json({ error: "Erro ao enviar o e-mail", details: error });
   }
 });
-app.get("/password", async (req, res) => {
+
+app.get("/password", async (_req, res) => {
   try {
     const mailOptions = {
       from: '"Livo App" <noreaply@livoapp.com.br>',
@@ -953,7 +1479,7 @@ app.get("/password", async (req, res) => {
   }
 });
 
-app.get("/statement", async (req, res) => {
+app.get("/statement", async (_req, res) => {
   try {
     const mailOptions = {
       from: '"Livo App" <noreaply@livoapp.com.br>',
@@ -1108,7 +1634,7 @@ app.get("/statement", async (req, res) => {
   }
 });
 
-app.get("/access", async (req, res) => {
+app.get("/access", async (_req, res) => {
   try {
     const mailOptions = {
       from: '"Livo App" <noreaply@livoapp.com.br>',
@@ -1320,7 +1846,7 @@ app.get("/access", async (req, res) => {
   }
 });
 
-app.get("/delivery", async (req, res) => {
+app.get("/delivery", async (_req, res) => {
   try {
     const mailOptions = {
       from: '"Livo App" <noreaply@livoapp.com.br>',
@@ -1547,8 +2073,7 @@ app.get("/delivery", async (req, res) => {
   }
 });
 
-
-app.get("/reservation", async (req, res) => {
+app.get("/reservation", async (_req, res) => {
   try {
     const mailOptions = {
       from: '"Livo App" <noreaply@livoapp.com.br>',
@@ -1781,7 +2306,7 @@ app.get("/reservation", async (req, res) => {
   }
 });
 
-app.get("/finish", async (req, res) => {
+app.get("/finish", async (_req, res) => {
   try {
     const mailOptions = {
       from: '"Livo App" <noreaply@livoapp.com.br>',

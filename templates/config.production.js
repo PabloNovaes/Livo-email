@@ -17,15 +17,13 @@ export default {
     },
   },
   css: {
-    inline: false,
     tailwind: true,
     shorthand: true,
-    purge: false,
+    purge: true,
     resolveProps: false,
     safe: true,
     sixHex: true
   },
   prettify: true,
   markdown: true,
-
 }
