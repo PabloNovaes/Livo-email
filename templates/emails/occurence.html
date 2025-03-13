@@ -1,0 +1,100 @@
+---
+preheader: Sua ocorrência teve uma atualização:.
+language: pt
+---
+
+<style>
+    .PENDENTE {
+        color: #eab308;
+    }
+
+    .CONCLUIDA {
+        color: #22c55e;
+    }
+
+    .EM ANDAMENTO {
+        color: #3b82f6;
+    }
+
+    .INFERIDO {
+        color: #a855f7;
+    }
+
+    .CANCELADO {
+        color: #ef4444;
+    }
+</style>
+
+
+<x-main>
+    <div class="bg-[#ffffff] p-6">
+        <h1 data-subtitle class="-tracking-[.8px]">Atualização de ocorrência</span>
+        </h1>
+        <x-spacer height="10px" />
+        <p data-content class="-tracking-[1px]">
+            <span>
+                Olá<span class="text-[#663C9D]"> Diego Santana,</span>
+            </span>
+            Informamos que sua ocorrência foi atualizada
+        </p>
+        <x-spacer height="20px" />
+        <div class="rounded-3xl border overflow-auto custom-card-bg p-3 pt-0">
+            <table class="w-full h-[25%]">
+                <!-- <tr class="h-3"></tr> -->
+                <tr align="center">
+                    <td>
+                        <table class="w-fit">
+                            <tr align="center">
+                                <td>
+                                    <h3 class="py-2 text-[1.2em]">Nova ocorrência</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <img src="https://blog.synergyco.com.br/wp-content/uploads/2018/03/172165-estender-500-palavras-x-dicas-para-impressionar-seus-clientes-em-uma-reuniao-de-negocios-1000x640.jpg"
+                                        class="bg-[#fff] rounded-3xl border w-full object-fill p-1.5" alt="">
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="h-2"></tr>
+                <tr align="center">
+                    <table class="w-full">
+                        <!-- <tr class='h-3'></tr> -->
+                        <tr align="center">
+                            <td class="border rounded-2xl bg-[#f8f9fa]">
+                                <table class="w-full p-1" align="center">
+                                    <tr>
+                                        <td class="p-3" colspan="2">
+                                            <strong>Descrição:</strong>
+                                            Teste de nova ocorrência
+                                        </td>
+                                    </tr>
+                                    <x-table-row-separator />
+                                    <tr class="h-8">
+                                        <td align="start" class="pl-3 w-[100px]">
+                                            <p data-subtext>Status</p>
+                                        </td>
+                                        <td align="end" class="pr-3">
+                                            <span data-status="CONCLUIDA">Concluida</span>
+                                        </td>
+                                    </tr>
+                                    <x-table-row-separator />
+                                    <tr class="h-8">
+                                        <td align="start" class="pl-3">
+                                            <p data-subtext>Condomínio</p>
+                                        </td>
+                                        <td align="end" class="pr-3">
+                                            <p data-text>Livo App</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </tr>
+            </table>
+        </div>
+    </div>
+</x-main>

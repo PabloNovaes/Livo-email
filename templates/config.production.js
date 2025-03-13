@@ -18,6 +18,6 @@ export default {
   },
   css: {
     inline: true,
-    purge: true
+
   }
 };
