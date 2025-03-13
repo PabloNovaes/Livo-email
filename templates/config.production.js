@@ -17,13 +17,7 @@ export default {
     },
   },
   css: {
-    tailwind: true,
-    shorthand: true,
-    purge: true,
-    resolveProps: false,
-    safe: true,
-    sixHex: true
-  },
-  prettify: true,
-  markdown: true,
-}
+    inline: true,
+    purge: true
+  }
+};

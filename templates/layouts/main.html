@@ -27,7 +27,7 @@
   </if>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <style data-embed type="text/css">
+  <style type="text/css">
     @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
     /* ======================= */
     /* 📦 Tailwind Directives   */
@@ -220,123 +220,114 @@
 </head>
 
 <body style="color-scheme: light only;"
-  class="m-0 w-full [word-break:break-word] font-airbnb p-2.5 antialiased [-webkit-font-smoothing:antialiased] bg-[#ebf0f6] {{ page.bodyClass || '' }}">
+  class="m-0 w-full [word-break:break-word] p-2.5 font-inter antialiased [-webkit-font-smoothing:antialiased] bg-[#ebf0f6] {{ page.bodyClass || '' }}">
   <if condition="page.preheader">
     <div class="hidden">
       {{{ page.preheader }}}
       <each loop="item in Array.from(Array(150))">&#8199;&#65279;&#847; </each>
     </div>
   </if>
-  <table class="mx-auto">
-    <tr">
-      <td>
-        <div aria-roledescription="email" aria-label="{{{ page.title || '' }}}" lang="{{ page.language || 'en' }}">
-          <div class="max-w-[600px] overflow-auto bg-[#fff]">
-            <div class="text-center py-2 pt-3">
-              <img
-                src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FVector%20(5).png?alt=media&token=9a784cd7-0d4e-45ea-a9e0-4d04994511bb"
-                alt="condominio-logo" class="w-[40px] grayscale text-white">
-            </div>
-            <header>
-              <img
-                src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2Fstatement-bg%20(4).jpg?alt=media&token=b16860c8-f182-4ed2-bcf2-330b3bd0ac4c"
-                class="w-full aspect-video max-h-[128px] object-cover" alt="">
-            </header>
-            <yield />
-            <div class="bg-[#F8F9FA] p-6">
-              <img
-                src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FLogo%20(4).png?alt=media&token=b71580ae-371a-4672-8410-313f3c61324b"
-                class="w-16" alt="livo-logo">
-              <x-spacer height="10px" />
-              <p data-default-message class="w-[86%]">
-                Essa notificação foi enviada ao endereço de e-mail associado
-                a sua conta LIVO.
-              </p>
-              <x-spacer height="10px" />
-              <p data-default-message>
-                Não responda a este e-mail, caso necessite de ajuda, entre em contato com nosso suporte via <a
-                  href="https://api.whatsapp.com/send?phone=5511991534123&text=Ol%C3%A1%2C%20gostaria%20de%20ajuda%20com%20a%20plataforma%20Livo."
-                  class="text-[#7D40AC]">WhatsApp</a>
-              </p>
-              <x-spacer height="10px" />
-              <table class="w-full">
-                <tr class="font-semibold">
-                  <td class="-tracking-[.6px]">Contatos</td>
-                </tr>
-                <tr class="h-1"></tr>
+  <div class="max-w-[600px] mx-auto" aria-roledescription="email" aria-label="{{{ page.title || '' }}}"
+    lang="{{ page.language || 'en' }}">
+    <div class="overflow-auto bg-[#fff]">
+      <div class="text-center py-2 pt-3">
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FVector%20(5).png?alt=media&token=9a784cd7-0d4e-45ea-a9e0-4d04994511bb"
+          alt="condominio-logo" class="w-[40px] grayscale text-white">
+      </div>
+      <header class="p-6 py-16 header-gradient"></header>
+      <yield />
+      <div class="bg-[#F8F9FA] p-6">
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FLogo%20(4).png?alt=media&token=b71580ae-371a-4672-8410-313f3c61324b"
+          class="w-16" alt="livo-logo">
+        <x-spacer height="10px" />
+        <p data-default-message class="w-[86%]">
+          Essa notificação foi enviada ao endereço de e-mail associado
+          a sua conta LIVO.
+        </p>
+        <x-spacer height="10px" />
+        <p data-default-message>
+          Não responda a este e-mail, caso necessite de ajuda, entre em contato com nosso suporte via <a
+            href="https://api.whatsapp.com/send?phone=5511991534123&text=Ol%C3%A1%2C%20gostaria%20de%20ajuda%20com%20a%20plataforma%20Livo."
+            class="text-[#7D40AC]">WhatsApp</a>
+        </p>
+        <x-spacer height="10px" />
+        <table class="w-full">
+          <tr class="font-semibold">
+            <td class="-tracking-[.6px]">Contatos</td>
+          </tr>
+          <tr class="h-1"></tr>
+          <tr>
+            <td>
+              <table>
                 <tr>
-                  <td>
-                    <table>
-                      <tr>
-                        <td class="bg-white [border:solid_1px_#E9ECF2] rounded-[14px] p-1.5">
-                          <a
-                            href="https://api.whatsapp.com/send?phone=5511991534123&text=Ol%C3%A1%2C%20gostaria%20de%20ajuda%20com%20a%20plataforma%20Livo.">
-                            <div class="h-7">
-                              <img loading="lazy" class="w-7 h-7 text-white"
-                                src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2Fwpp.png?alt=media&token=cb113f85-df38-49df-b8c4-996c9e1746c8"
-                                alt="WhatsApp" />
-                            </div>
-                          </a>
-                        </td>
+                  <td class="bg-white [border:solid_1px_#E9ECF2] rounded-[14px] p-1.5">
+                    <a
+                      href="https://api.whatsapp.com/send?phone=5511991534123&text=Ol%C3%A1%2C%20gostaria%20de%20ajuda%20com%20a%20plataforma%20Livo.">
+                      <div class="h-7">
+                        <img loading="lazy" class="w-7 h-7 text-white"
+                          src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2Fwpp.png?alt=media&token=cb113f85-df38-49df-b8c4-996c9e1746c8"
+                          alt="WhatsApp" />
+                      </div>
+                    </a>
+                  </td>
 
-                        <td class="w-1"></td>
+                  <td class="w-1"></td>
 
-                        <td class="bg-white [border:solid_1px_#E9ECF2] rounded-[14px] p-1.5">
-                          <a href="https://www.instagram.com/livoapp/">
-                            <div class="h-[28px]">
-                              <img loading="lazy" class="w-7 h-7 text-white"
-                                src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FFrame-1.png?alt=media&token=ad760e02-6e6e-4d7f-b23c-fd9410e774d8"
-                                alt="Instagram" />
-                            </div>
-                          </a>
-                        </td>
+                  <td class="bg-white [border:solid_1px_#E9ECF2] rounded-[14px] p-1.5">
+                    <a href="https://www.instagram.com/livoapp/">
+                      <div class="h-[28px]">
+                        <img loading="lazy" class="w-7 h-7 text-white"
+                          src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FFrame-1.png?alt=media&token=ad760e02-6e6e-4d7f-b23c-fd9410e774d8"
+                          alt="Instagram" />
+                      </div>
+                    </a>
+                  </td>
 
-                        <td class="w-1"></td>
+                  <td class="w-1"></td>
 
-                        <td class="bg-white [border:solid_1px_#E9ECF2] rounded-[14px] p-1.5">
-                          <a href="mailto:contato@livoapp.com.br">
-                            <div class="h-[28px]">
-                              <img loading="lazy" class="w-7 h-7 text-white"
-                                src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FFrame-2.png?alt=media&token=557e308f-7b51-49aa-9e21-6d6469c4315d"
-                                alt="Email" />
-                            </div>
-                          </a>
-                        </td>
-                      </tr>
-                    </table>
+                  <td class="bg-white [border:solid_1px_#E9ECF2] rounded-[14px] p-1.5">
+                    <a href="mailto:contato@livoapp.com.br">
+                      <div class="h-[28px]">
+                        <img loading="lazy" class="w-7 h-7 text-white"
+                          src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FFrame-2.png?alt=media&token=557e308f-7b51-49aa-9e21-6d6469c4315d"
+                          alt="Email" />
+                      </div>
+                    </a>
                   </td>
                 </tr>
               </table>
-              <x-spacer height="10px" />
-              <table class="w-full" align="center">
-                <tr class="font-semibold">
-                  <td class="-tracking-[.6px]">Transparência</td>
-                </tr>
-                <tr class="h-1"></tr>
-                <tr>
-                  <td>
-                    <a href="https://livoapp.com.br/lgpd.php" data-notify class="no-underline">politica de
-                      privacidade</a>
-                  </td>
-                </tr>
-              </table>
-              <x-spacer height="10px" />
-              <img
-                src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FLGPD.png?alt=media&token=d01a856e-bf78-4457-93cf-d43e99417590"
-                class="w-28" alt="">
-            </div>
+            </td>
+          </tr>
+        </table>
+        <x-spacer height="10px" />
+        <table class="w-full" align="center">
+          <tr class="font-semibold">
+            <td class="-tracking-[.6px]">Transparência</td>
+          </tr>
+          <tr class="h-1"></tr>
+          <tr>
+            <td>
+              <a href="https://livoapp.com.br/lgpd.php" data-notify class="no-underline">politica de
+                privacidade</a>
+            </td>
+          </tr>
+        </table>
+        <x-spacer height="10px" />
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/upload-hub-fdabc.appspot.com/o/files%2FLGPD.png?alt=media&token=d01a856e-bf78-4457-93cf-d43e99417590"
+          class="w-28" alt="">
+      </div>
 
 
-            <footer class="p-4 bg-[#fff] px-6">
-              <div class="font-light text-xs -tracking-[1px] text-center">
-                &copy; {{new Date().getFullYear()}} Livo App. Todos os direitos reservados
-              </div>
-            </footer>
-          </div>
+      <footer class="p-4 bg-[#fff] px-6">
+        <div class="font-light text-xs -tracking-[1px] text-center">
+          &copy; {{new Date().getFullYear()}} Livo App. Todos os direitos reservados
         </div>
-      </td>
-      </tr>
-  </table>
+      </footer>
+
+    </div>
   </div>
 </body>
 
